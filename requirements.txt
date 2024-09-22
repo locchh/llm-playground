@@ -5,4 +5,4 @@ jupyter==1.1.1
 sentencepiece==0.2.0
 nltk==3.9.1
 spacy==3.7.6
-torchtext==0.18.0
+torchtext>0.18.0
