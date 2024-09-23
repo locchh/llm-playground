@@ -1,6 +1,10 @@
 # llm-playground
 A sandbox environment to experiment with large language models and various NLP tasks.
 
+**Notes**
+
+*IDIA-SMI 550.107.02 Driver Version: 550.107.02 CUDA Version: 12.4*
+
 # references
 
 [nlp-course](https://huggingface.co/learn/nlp-course/chapter1/1)
