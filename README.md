@@ -16,9 +16,3 @@ A sandbox environment to experiment with large language models and various NLP t
 [speech-and-language-processing](https://web.stanford.edu/~jurafsky/slp3/)
 
 [promptingguide](https://www.promptingguide.ai/)
-
-[pytorch-tutorials](https://pytorch.org/tutorials/)
-
-[tensorflow-in-practice](https://www.coursera.org/professional-certificates/tensorflow-in-practice)
-
-[tensorflow-advanced-techniques](https://www.coursera.org/specializations/tensorflow-advanced-techniques)
