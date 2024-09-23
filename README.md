@@ -22,3 +22,13 @@ A sandbox environment to experiment with large language models and various NLP t
 [speech-and-language-processing](https://web.stanford.edu/~jurafsky/slp3/)
 
 [promptingguide](https://www.promptingguide.ai/)
+
+[transformers](https://github.com/huggingface/transformers)
+
+[datasets](https://github.com/huggingface/datasets)
+
+[tokenizers](https://github.com/huggingface/tokenizers)
+
+[accelerate](https://github.com/huggingface/accelerate)
+
+[models-hub](https://huggingface.co/models)
