@@ -3,7 +3,9 @@ A sandbox environment to experiment with large language models and various NLP t
 
 **Notes**
 
-*IDIA-SMI 550.107.02 Driver Version: 550.107.02 CUDA Version: 12.4*
+- *IDIA-SMI 550.107.02 Driver Version: 550.107.02 CUDA Version: 12.4*
+
+- *Python =3.8*
 
 # references
 
