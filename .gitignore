@@ -3,3 +3,7 @@ __pycache__
 .vscode
 
 .ipynb_checkpoints
+
+*my_cache
+
+*test-trainer
