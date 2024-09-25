@@ -23,12 +23,14 @@ A sandbox environment to experiment with large language models and various NLP t
 
 [promptingguide](https://www.promptingguide.ai/)
 
-[transformers](https://github.com/huggingface/transformers)
+[huggingface-transformers](https://github.com/huggingface/transformers)
 
-[datasets](https://github.com/huggingface/datasets)
+[huggingface-datasets](https://github.com/huggingface/datasets)
 
-[tokenizers](https://github.com/huggingface/tokenizers)
+[huggingface-tokenizers](https://github.com/huggingface/tokenizers)
 
-[accelerate](https://github.com/huggingface/accelerate)
+[huggingface-accelerate](https://github.com/huggingface/accelerate)
+
+[huggingface-evaluate](https://github.com/huggingface/evaluate)
 
 [models-hub](https://huggingface.co/models)
