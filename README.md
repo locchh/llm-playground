@@ -35,6 +35,8 @@ A sandbox environment to experiment with large language models and various NLP t
 
 [huggingface-evaluate](https://github.com/huggingface/evaluate)
 
-[models-hub](https://huggingface.co/models)
+[huggingface-autotrain-advanced](https://github.com/huggingface/autotrain-advanced)
+
+[huggingface-models-hub](https://huggingface.co/models)
 
 [faiss](https://faiss.ai/)
