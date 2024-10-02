@@ -27,18 +27,20 @@ A sandbox environment to experiment with large language models and various NLP t
 
 [huggingface-transformers](https://github.com/huggingface/transformers)
 
-[huggingface-datasets](https://github.com/huggingface/datasets)
+[huggingface-repo-datasets](https://github.com/huggingface/datasets)
 
-[huggingface-tokenizers](https://github.com/huggingface/tokenizers)
+[huggingface-repo-tokenizers](https://github.com/huggingface/tokenizers)
 
-[huggingface-accelerate](https://github.com/huggingface/accelerate)
+[huggingface-repo-accelerate](https://github.com/huggingface/accelerate)
 
-[huggingface-evaluate](https://github.com/huggingface/evaluate)
+[huggingface-repo-evaluate](https://github.com/huggingface/evaluate)
 
-[huggingface-autotrain-advanced](https://github.com/huggingface/autotrain-advanced)
+[huggingface-repo-autotrain-advanced](https://github.com/huggingface/autotrain-advanced)
 
 [huggingface-models-hub](https://huggingface.co/models)
 
-[autotrain](https://huggingface.co/autotrain)
+[huggingface-learn](https://huggingface.co/learn)
+
+[huggingface-autotrain](https://huggingface.co/autotrain)
 
 [faiss](https://faiss.ai/)
