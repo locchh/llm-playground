@@ -8,3 +8,6 @@ __pycache__
 
 *test_trainer
 *test-trainer
+
+*.pkl
+*.pth
