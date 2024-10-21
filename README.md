@@ -46,6 +46,14 @@ A sandbox environment to experiment with large language models and various NLP t
 
 [huggingface-hugging-quants](https://huggingface.co/hugging-quants)
 
+[sft-llama3](https://huggingface.co/blog/mlabonne/sft-llama3)
+
+[sft_trainer](https://huggingface.co/docs/trl/en/sft_trainer)
+
+[huggingface-llama-recipes](https://github.com/huggingface/huggingface-llama-recipes)
+
+[alignment-handbook](https://github.com/huggingface/alignment-handbook)
+
 [faiss](https://faiss.ai/)
 
 [openai-chatgpt-api-pricing-calculator](https://gptforwork.com/tools/openai-chatgpt-api-pricing-calculator)
