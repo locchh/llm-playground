@@ -10,6 +10,8 @@ A sandbox environment to experiment with large language models and various NLP t
 
 # references
 
+[llama-3.2-90b-vision-instruct](https://build.nvidia.com/meta/llama-3.2-90b-vision-instruct)
+
 [nlp-course](https://huggingface.co/learn/nlp-course/chapter1/1)
 
 [promptingguide](https://www.promptingguide.ai/)

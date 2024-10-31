@@ -1,5 +1,5 @@
 '''
-python utils/download_repo.py <repo_id>
+python utils/pull.py <repo_id>
 '''
 import os
 import sys
