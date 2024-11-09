@@ -1,13 +1,17 @@
 __pycache__
-
 .vscode
-
 .ipynb_checkpoints
 
 *my_cache
-
 *test_trainer
 *test-trainer
 
+src
+tmp
+
 *.pkl
 *.pth
+*.pt
+*.pd
+*.bin
+*.h5
