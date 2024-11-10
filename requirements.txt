@@ -9,3 +9,4 @@ spacy==3.7.2 # conda install
 torchtext==0.14.0
 torchdata==0.5.0
 flash_attn==2.6.3          # /home/loc/Works/flash-attention (need gcc to build)
+gradio
