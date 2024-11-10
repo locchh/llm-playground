@@ -11,6 +11,7 @@ tmp
 test*
 data
 scratch
+llama2.c
 
 *.pkl
 *.pth
