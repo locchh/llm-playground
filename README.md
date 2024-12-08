@@ -10,9 +10,15 @@ A sandbox environment to experiment with large language models and various NLP t
 
 # references
 
-[llama-3.2-90b-vision-instruct](https://build.nvidia.com/meta/llama-3.2-90b-vision-instruct)
-
 [nlp-course](https://huggingface.co/learn/nlp-course/chapter1/1)
+
+[IBM Generative AI Engineering Professional Certificate](https://www.coursera.org/professional-certificates/ibm-generative-ai-engineering#courses)
+
+[llama-recipes](https://github.com/meta-llama/llama-recipes)
+
+[a smol course](https://github.com/huggingface/smol-course/tree/main?tab=readme-ov-file)
+
+[llama-3.2-90b-vision-instruct](https://build.nvidia.com/meta/llama-3.2-90b-vision-instruct)
 
 [promptingguide](https://www.promptingguide.ai/)
 
