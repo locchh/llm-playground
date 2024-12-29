@@ -1,0 +1,5 @@
+Collecting portalocker
+  Using cached portalocker-3.0.0-py3-none-any.whl.metadata (8.5 kB)
+Using cached portalocker-3.0.0-py3-none-any.whl (19 kB)
+Installing collected packages: portalocker
+Successfully installed portalocker-3.0.0
