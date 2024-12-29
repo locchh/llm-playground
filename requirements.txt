@@ -1,4 +1,5 @@
 torchtext==0.17.1
+portalocker>=2.0.0
 #torch==2.2.1
 #torchdata==0.7.1
 transformers==4.46.3
