@@ -7,6 +7,7 @@ __pycache__
 *my_cache
 *test_trainer
 *test-trainer
+bert_dataset
 
 src
 tmp
@@ -21,3 +22,7 @@ llama2.c
 *.pd
 *.bin
 *.h5
+
+*.tar
+*.zip
+*.rar
