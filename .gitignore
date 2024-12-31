@@ -3,6 +3,7 @@ __pycache__
 .ipynb_checkpoints
 .DS_Store
 .data
+.vector_cache
 
 my_cache
 test_trainer
@@ -10,6 +11,7 @@ test-trainer
 bert_dataset
 trained_model
 results
+output
 
 src
 tmp
@@ -28,3 +30,5 @@ llama2.c
 *.tar
 *.zip
 *.rar
+
+*.lock
