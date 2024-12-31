@@ -4,10 +4,12 @@ __pycache__
 .DS_Store
 .data
 
-*my_cache
-*test_trainer
-*test-trainer
+my_cache
+test_trainer
+test-trainer
 bert_dataset
+trained_model
+results
 
 src
 tmp
