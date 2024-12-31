@@ -13,7 +13,7 @@ A sandbox environment to experiment with large language models and various NLP t
 
 - **Update Hands-on Notebooks**: Revise and enhance notebooks to incorporate the latest technologies and methodologies. ✍️
 - **LLM Collections**: Create and maintain a curated collection of frequently used Large Language Models (LLMs) in a structured markdown format. 📑
-- **Fine-tuning Series**: Develop a series of proof-of-concept (POC) repositories for fine-tuning LLMs, hosted on GitHub. 🔥
+- **Fine-tuning Series**: Develop a series of proof-of-concept (POC) repositories for fine-tuning LLMs, hosted on GitHub (e.g.,[ft2](https://github.com/locchh/ft2), [ft3](https://github.com/locchh/ft3), etc.). 🔥
 - **LLM Blog**: Write and publish insightful blog posts on LinkedIn, sharing perspectives and research related to LLMs. 📝🌐
-- **POC Repositories**: Create and share repositories showcasing new technologies and quick demonstrations for easy exploration. 📂
+- **POC Repositories**: Create and share repositories showcasing new technologies and quick demonstrations for easy exploration e.g.,[lr4lg](https://github.com/locchh/lr4lg), [debugger](https://github.com/locchh/debugger), etc.). 📂
 - **Build Continuously Growing Repositories**: Develop and maintain long-term, evolving repositories for ongoing projects (e.g., [Synthflow](https://github.com/locchh/synthflow), [Antflow](https://github.com/locchh/antflow), [Antelligence](https://github.com/locchh/antelligence), etc.). 🔄
