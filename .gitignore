@@ -11,7 +11,9 @@ test-trainer
 bert_dataset
 trained_model
 results
+results_qlora
 output
+qlora_final_model
 
 src
 tmp
