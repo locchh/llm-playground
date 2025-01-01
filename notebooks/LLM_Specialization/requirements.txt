@@ -1,0 +1,23 @@
+torchtext==0.17.1
+portalocker>=2.0.0
+#torch==2.2.1
+#torchdata==0.7.1
+torchmetrics
+transformers==4.46.3
+#tokenizers==0.20.3
+#huggingface-hub==0.27.0
+datasets==3.1.0
+accelerate==1.0.1
+evaluate
+sacrebleu
+trl
+peft
+bitsandbytes
+sentencepiece==0.2.0
+nltk==3.9.1
+gradio==4.44.1
+spacy==3.7.2 # conda install
+#flash_attn==2.6.3          # /home/loc/Works/flash-attention (need gcc to build)
+scikit-learn
+plotly
+jupyter==1.1.1
