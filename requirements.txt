@@ -9,6 +9,7 @@ transformers==4.46.3
 datasets==3.1.0
 accelerate==1.0.1
 evaluate
+sacrebleu
 trl
 peft
 bitsandbytes
