@@ -20,6 +20,3 @@
 
 ## NLP Learning Course
 - [Hugging Face NLP Course - Chapter 1](https://huggingface.co/learn/nlp-course/chapter1/1)
-
-## Smol Course
-- [Smol Course GitHub Repository](https://github.com/huggingface/smol-course/tree/main)
