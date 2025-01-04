@@ -16,6 +16,10 @@ output
 qlora_final_model
 model_output3
 backup
+ppo-good
+ppo-bad
+
+
 
 src
 tmp

@@ -1,5 +1,8 @@
 # Hugging Face Documentation and Learning Resources
 
+## HuggingFace Blog
+- [HuggingFace Blog](https://huggingface.co/blog)
+
 ## Transformers
 - [Transformers Documentation](https://huggingface.co/docs/transformers/index)
 
