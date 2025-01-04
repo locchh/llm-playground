@@ -14,6 +14,7 @@ evaluate
 bitsandbytes
 sacrebleu
 sentencepiece==0.2.0
+faiss-cpu
 nltk==3.9.1
 gradio==4.44.1
 spacy==3.7.2 # conda install
@@ -21,3 +22,4 @@ spacy==3.7.2 # conda install
 scikit-learn
 plotly
 jupyter==1.1.1
+wget
