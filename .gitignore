@@ -20,6 +20,7 @@ ppo-good
 ppo-bad
 dpo
 bert-finetuned-ner
+distilbert-base-uncased-finetuned-imdb
 
 src
 tmp
