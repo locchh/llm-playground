@@ -21,6 +21,8 @@ ppo-bad
 dpo
 bert-finetuned-ner
 distilbert-base-uncased-finetuned-imdb
+marian-finetuned-kde4-en-to-fr
+
 
 src
 tmp
@@ -28,6 +30,7 @@ test*
 data
 scratch
 llama2.c
+
 
 *.pkl
 *.pth
