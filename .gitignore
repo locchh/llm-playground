@@ -5,6 +5,7 @@ __pycache__
 .data
 .vector_cache
 
+archive
 my_cache
 test_trainer
 test-trainer
