@@ -13,10 +13,12 @@ peft
 evaluate
 bitsandbytes
 sacrebleu
+rouge_score
 sentencepiece==0.2.0
 faiss-cpu
 nltk==3.9.1
 gradio==4.44.1
+protobuf==3.20.3
 spacy==3.7.2 # conda install
 #flash_attn==2.6.3          # /home/loc/Works/flash-attention (need gcc to build)
 scikit-learn

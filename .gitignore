@@ -23,6 +23,7 @@ dpo
 bert-finetuned-ner
 distilbert-base-uncased-finetuned-imdb
 marian-finetuned-kde4-en-to-fr
+mt5-small-finetuned-amazon-en-es
 
 
 src
