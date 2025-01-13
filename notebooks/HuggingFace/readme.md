@@ -19,4 +19,8 @@
 - [Evaluate Documentation](https://huggingface.co/docs/evaluate/en/index)
 
 ## NLP Learning Course
-- [Hugging Face NLP Course - Chapter 1](https://huggingface.co/learn/nlp-course/chapter1/1)
+- [Hugging Face NLP Course](https://huggingface.co/learn/nlp-course/chapter1/1)
+
+## Transformers
+
+- [Hugging Face Transformers](https://huggingface.co/docs/transformers/index)
