@@ -11,6 +11,7 @@ test_trainer
 test-trainer
 bert_dataset
 trained_model
+logs
 results
 results_qlora
 output
