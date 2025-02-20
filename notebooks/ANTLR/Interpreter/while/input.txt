@@ -1,0 +1,6 @@
+a <- 7
+b <- 4
+while b < a
+send b
+b <- b + 2
+a <- a + 1

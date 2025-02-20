@@ -1,0 +1,13 @@
+iff 3 > 6
+write 8
+otherwise
+next 9 + 5
+
+write 1 + 2
+
+iff 3 == 3
+write 10 + 10
+otherwise
+write 1
+
+next 5

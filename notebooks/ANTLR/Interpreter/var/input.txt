@@ -1,0 +1,6 @@
+x := 8^2 -4
+write x
+y := 7*3 +2
+write y
+c := 1 + 1 + 5 * 3
+write c
