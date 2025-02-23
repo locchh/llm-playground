@@ -1,3 +1,7 @@
+- *You can parse source code by defining the grammar as a set of characters, numbers, delimiters, and spaces. This ensures 100% coverage, but it is meaningless.*
+
+- *Recognizing characters, numbers, delimiters, and spaces ensures full coverage at the lexical level, but without syntax and semantic rules, it does not enable meaningful parsing.*
+
 ```
 //  Header (Optional, for Imports & Configuration)
 
