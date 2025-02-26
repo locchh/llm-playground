@@ -43,9 +43,11 @@
 
 https://github.com/locchh/llm-playground/blob/main/notebooks/AI_Agents_in_LangGraph/Lesson_1_Student.ipynb
 
-https://github.com/locchh/llm-playground/blob/main/notebooks/LLMs_as_Operating_Systems%3A_Agent_Memory/L3.ipynb
+https://github.com/locchh/llm-playground/blob/main/notebooks/LLMs_as_Operating_Systems%3A_Agent_Memory/L1.ipynb
 
 https://github.com/locchh/llm-playground/blob/main/notebooks/Evaluating_AI_Agents/L3.ipynb
+
+https://cookbook.openai.com/examples/orchestrating_agents
 
 
 [chat completions endpoint](https://platform.openai.com/docs/guides/chat)
