@@ -41,11 +41,6 @@
 
 ### Refs
 
-https://github.com/locchh/llm-playground/blob/main/notebooks/Evaluating_AI_Agents/L3.ipynb
-
-https://cookbook.openai.com/examples/orchestrating_agents
-
-
 [chat completions endpoint](https://platform.openai.com/docs/guides/chat)
 
 [reasoning](https://platform.openai.com/docs/guides/reasoning)
