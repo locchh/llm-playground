@@ -4,7 +4,6 @@ __pycache__
 .DS_Store
 .data
 .vector_cache
-tmp
 *.pkl
 *.pth
 *.pt
@@ -15,3 +14,6 @@ tmp
 *.zip
 *.rar
 *.lock
+
+tmp
+sft_output
