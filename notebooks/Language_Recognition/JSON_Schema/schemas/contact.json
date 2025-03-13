@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/contact.json",
+  "title": "Contact Information",
+  "description": "Contact details for a person or organization",
+  "type": "object",
+  "properties": {
+    "email": {
+      "type": "string",
+      "format": "email",
+      "description": "Email address"
+    },
+    "phone": {
+      "type": "string",
+      "pattern": "^\\+?[1-9]\\d{1,14}$",
+      "description": "Phone number in E.164 format"
+    },
+    "preferredContact": {
+      "type": "string",
+      "enum": ["email", "phone"],
+      "description": "Preferred contact method"
+    }
+  },
+  "required": ["email"]
+}

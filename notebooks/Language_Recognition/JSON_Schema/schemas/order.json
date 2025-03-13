@@ -1,0 +1,127 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/order.json",
+  "title": "Order",
+  "description": "An e-commerce order",
+  "type": "object",
+  "$defs": {
+    "orderStatus": {
+      "type": "string",
+      "enum": ["pending", "processing", "shipped", "delivered", "cancelled"],
+      "default": "pending"
+    },
+    "orderItem": {
+      "type": "object",
+      "properties": {
+        "productId": {
+          "type": "string"
+        },
+        "variantId": {
+          "type": "string"
+        },
+        "quantity": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "price": {
+          "$ref": "./product.json#/$defs/price"
+        }
+      },
+      "required": ["productId", "quantity", "price"]
+    },
+    "payment": {
+      "type": "object",
+      "properties": {
+        "method": {
+          "type": "string",
+          "enum": ["credit_card", "paypal", "bank_transfer", "crypto"]
+        },
+        "status": {
+          "type": "string",
+          "enum": ["pending", "authorized", "captured", "refunded", "failed"]
+        },
+        "transactionId": {
+          "type": "string"
+        },
+        "amount": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "currency": {
+          "type": "string",
+          "enum": ["USD", "EUR", "GBP", "JPY"]
+        }
+      },
+      "required": ["method", "status", "amount", "currency"]
+    }
+  },
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique order identifier"
+    },
+    "customer": {
+      "$ref": "./customer.json",
+      "description": "Customer who placed the order"
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/orderItem"
+      },
+      "minItems": 1,
+      "description": "Items in the order"
+    },
+    "shippingAddress": {
+      "$ref": "./address.json",
+      "description": "Shipping address for this order"
+    },
+    "billingAddress": {
+      "$ref": "./address.json",
+      "description": "Billing address for this order"
+    },
+    "payment": {
+      "$ref": "#/$defs/payment",
+      "description": "Payment information"
+    },
+    "status": {
+      "$ref": "#/$defs/orderStatus",
+      "description": "Current status of the order"
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When the order was created"
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When the order was last updated"
+    },
+    "subtotal": {
+      "type": "number",
+      "exclusiveMinimum": 0,
+      "description": "Order subtotal before tax and shipping"
+    },
+    "tax": {
+      "type": "number",
+      "minimum": 0,
+      "description": "Tax amount"
+    },
+    "shippingCost": {
+      "type": "number",
+      "minimum": 0,
+      "description": "Shipping cost"
+    },
+    "total": {
+      "type": "number",
+      "exclusiveMinimum": 0,
+      "description": "Total order amount"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Additional notes for the order"
+    }
+  },
+  "required": ["id", "customer", "items", "shippingAddress", "status", "createdAt", "subtotal", "total"]
+}

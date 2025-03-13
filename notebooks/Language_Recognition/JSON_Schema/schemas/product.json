@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/product.json",
+  "title": "Product",
+  "description": "A product in the e-commerce catalog",
+  "type": "object",
+  "$defs": {
+    "price": {
+      "type": "object",
+      "properties": {
+        "amount": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "currency": {
+          "type": "string",
+          "enum": ["USD", "EUR", "GBP", "JPY"]
+        }
+      },
+      "required": ["amount", "currency"]
+    },
+    "variant": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "sku": {
+          "type": "string"
+        },
+        "price": {
+          "$ref": "#/$defs/price"
+        },
+        "inventory": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "attributes": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        }
+      },
+      "required": ["id", "name", "sku", "price"]
+    }
+  },
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique product identifier"
+    },
+    "name": {
+      "type": "string",
+      "description": "Product name"
+    },
+    "description": {
+      "type": "string",
+      "description": "Product description"
+    },
+    "category": {
+      "type": "string",
+      "description": "Product category"
+    },
+    "basePrice": {
+      "$ref": "#/$defs/price",
+      "description": "Base price of the product"
+    },
+    "images": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      },
+      "description": "URLs to product images"
+    },
+    "variants": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/variant"
+      },
+      "description": "Product variants"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Product tags for searching and categorization"
+    }
+  },
+  "required": ["id", "name", "basePrice"]
+}

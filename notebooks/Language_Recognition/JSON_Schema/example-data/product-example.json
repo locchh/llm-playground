@@ -1,0 +1,45 @@
+{
+  "id": "prod-12345",
+  "name": "Ergonomic Office Chair",
+  "description": "A comfortable office chair with adjustable height and lumbar support",
+  "category": "Office Furniture",
+  "basePrice": {
+    "amount": 299.99,
+    "currency": "USD"
+  },
+  "images": [
+    "https://example.com/images/chair-black.jpg",
+    "https://example.com/images/chair-blue.jpg"
+  ],
+  "variants": [
+    {
+      "id": "var-1001",
+      "name": "Black",
+      "sku": "CHAIR-BLK",
+      "price": {
+        "amount": 299.99,
+        "currency": "USD"
+      },
+      "inventory": 25,
+      "attributes": {
+        "color": "Black",
+        "material": "Mesh"
+      }
+    },
+    {
+      "id": "var-1002",
+      "name": "Blue",
+      "sku": "CHAIR-BLU",
+      "price": {
+        "amount": 319.99,
+        "currency": "USD"
+      },
+      "inventory": 15,
+      "attributes": {
+        "color": "Blue",
+        "material": "Mesh"
+      }
+    }
+  ],
+  "tags": ["office", "chair", "ergonomic", "furniture"]
+}

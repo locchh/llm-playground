@@ -1,0 +1,64 @@
+{
+  "id": "order-5678",
+  "customer": {
+    "id": "cust-9876",
+    "name": {
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "title": "Ms"
+    },
+    "contact": {
+      "email": "jane.smith@example.com",
+      "phone": "+12025550179",
+      "preferredContact": "email"
+    }
+  },
+  "items": [
+    {
+      "productId": "prod-12345",
+      "variantId": "var-1001",
+      "quantity": 1,
+      "price": {
+        "amount": 299.99,
+        "currency": "USD"
+      }
+    },
+    {
+      "productId": "prod-67890",
+      "quantity": 2,
+      "price": {
+        "amount": 24.99,
+        "currency": "USD"
+      }
+    }
+  ],
+  "shippingAddress": {
+    "street": "123 Main St",
+    "city": "Anytown",
+    "state": "CA",
+    "postalCode": "94043",
+    "country": "USA"
+  },
+  "billingAddress": {
+    "street": "123 Main St",
+    "city": "Anytown",
+    "state": "CA",
+    "postalCode": "94043",
+    "country": "USA"
+  },
+  "payment": {
+    "method": "credit_card",
+    "status": "captured",
+    "transactionId": "txn-1234567",
+    "amount": 359.96,
+    "currency": "USD"
+  },
+  "status": "shipped",
+  "createdAt": "2023-03-10T14:30:00Z",
+  "updatedAt": "2023-03-11T09:15:00Z",
+  "subtotal": 349.97,
+  "tax": 29.99,
+  "shippingCost": 0,
+  "total": 379.96,
+  "notes": "Please leave package at the front door"
+}

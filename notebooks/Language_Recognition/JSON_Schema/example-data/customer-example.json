@@ -1,0 +1,33 @@
+{
+  "id": "cust-9876",
+  "name": {
+    "firstName": "Jane",
+    "lastName": "Smith",
+    "title": "Ms"
+  },
+  "contact": {
+    "email": "jane.smith@example.com",
+    "phone": "+12025550179",
+    "preferredContact": "email"
+  },
+  "shippingAddress": {
+    "street": "123 Main St",
+    "city": "Anytown",
+    "state": "CA",
+    "postalCode": "94043",
+    "country": "USA"
+  },
+  "billingAddress": {
+    "street": "123 Main St",
+    "city": "Anytown",
+    "state": "CA",
+    "postalCode": "94043",
+    "country": "USA"
+  },
+  "useBillingAddressForShipping": true,
+  "accountCreated": "2023-01-15T08:30:00Z",
+  "preferences": {
+    "marketingEmails": true,
+    "theme": "dark"
+  }
+}

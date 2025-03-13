@@ -1,0 +1,39 @@
+{
+  "id": "cat-furniture",
+  "name": "Furniture",
+  "description": "Home and office furniture",
+  "subcategories": [
+    {
+      "id": "cat-office",
+      "name": "Office Furniture",
+      "description": "Furniture for office spaces",
+      "subcategories": [
+        {
+          "id": "cat-chairs",
+          "name": "Office Chairs",
+          "description": "Chairs for office use",
+          "products": ["prod-12345", "prod-12346", "prod-12347"]
+        },
+        {
+          "id": "cat-desks",
+          "name": "Desks",
+          "description": "Office desks and workstations",
+          "products": ["prod-23456", "prod-23457"]
+        }
+      ]
+    },
+    {
+      "id": "cat-living",
+      "name": "Living Room",
+      "description": "Living room furniture",
+      "subcategories": [
+        {
+          "id": "cat-sofas",
+          "name": "Sofas",
+          "description": "Sofas and couches",
+          "products": ["prod-34567", "prod-34568"]
+        }
+      ]
+    }
+  ]
+}

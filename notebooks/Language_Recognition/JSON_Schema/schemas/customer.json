@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/customer.json",
+  "title": "Customer",
+  "description": "Customer information",
+  "type": "object",
+  "$defs": {
+    "name": {
+      "type": "object",
+      "properties": {
+        "firstName": {
+          "type": "string"
+        },
+        "lastName": {
+          "type": "string"
+        },
+        "middleName": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string",
+          "enum": ["Mr", "Mrs", "Miss", "Ms", "Dr"]
+        }
+      },
+      "required": ["firstName", "lastName"]
+    }
+  },
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique customer identifier"
+    },
+    "name": {
+      "$ref": "#/$defs/name",
+      "description": "Customer's name"
+    },
+    "contact": {
+      "$ref": "./contact.json",
+      "description": "Customer's contact information"
+    },
+    "shippingAddress": {
+      "$ref": "./address.json",
+      "description": "Customer's shipping address"
+    },
+    "billingAddress": {
+      "$ref": "./address.json",
+      "description": "Customer's billing address"
+    },
+    "useBillingAddressForShipping": {
+      "type": "boolean",
+      "description": "Whether to use billing address for shipping",
+      "default": false
+    },
+    "accountCreated": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When the customer account was created"
+    },
+    "preferences": {
+      "type": "object",
+      "properties": {
+        "marketingEmails": {
+          "type": "boolean",
+          "default": true
+        },
+        "theme": {
+          "type": "string",
+          "enum": ["light", "dark", "system"],
+          "default": "system"
+        }
+      }
+    }
+  },
+  "required": ["id", "name", "contact"]
+}

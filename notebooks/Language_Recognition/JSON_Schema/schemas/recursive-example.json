@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/category.json",
+  "title": "Category",
+  "description": "A recursive category structure for product organization",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique category identifier"
+    },
+    "name": {
+      "type": "string",
+      "description": "Category name"
+    },
+    "description": {
+      "type": "string",
+      "description": "Category description"
+    },
+    "subcategories": {
+      "type": "array",
+      "items": {
+        "$ref": "#"
+      },
+      "description": "Subcategories within this category"
+    },
+    "products": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Product IDs in this category"
+    }
+  },
+  "required": ["id", "name"]
+}

@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/address.json",
+  "title": "Address",
+  "description": "A physical address",
+  "type": "object",
+  "properties": {
+    "street": {
+      "type": "string",
+      "description": "Street address"
+    },
+    "city": {
+      "type": "string",
+      "description": "City name"
+    },
+    "state": {
+      "type": "string",
+      "description": "State or province"
+    },
+    "postalCode": {
+      "type": "string",
+      "description": "Postal or ZIP code"
+    },
+    "country": {
+      "type": "string",
+      "description": "Country name",
+      "default": "USA"
+    }
+  },
+  "required": ["street", "city", "state", "postalCode"]
+}
