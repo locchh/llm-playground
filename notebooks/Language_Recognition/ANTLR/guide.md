@@ -140,6 +140,4 @@ generate_antlr_tests(doccano_data, OUTPUT_DIR)
 ## **🚀 Next Steps**
 - ✅ **Automate ANTLR parsing** to validate test cases.  
 - ✅ **Integrate with LLM** to suggest corrections.  
-- ✅ **Extend support for multi-line code blocks**.  
-
-
+- ✅ **Extend support for multi-line code blocks**.
