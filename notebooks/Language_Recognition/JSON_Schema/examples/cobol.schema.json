@@ -1,0 +1,112 @@
+{
+    "$id": "https://example.com/cobol.schema.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$defs": {
+        "DataDeclaration": {
+            "type": "object",
+            "properties": {
+                "level": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 77
+                },
+                "name": {
+                    "type": "string"
+                },
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "PIC",
+                        "OCCURS",
+                        "VALUE"
+                    ]
+                },
+                "picture": {
+                    "type": "string",
+                    "pattern": "^[9AXVZ()]+$"
+                }
+            },
+            "required": [
+                "level",
+                "name",
+                "type"
+            ]
+        },
+        "ProcedureStatement": {
+            "type": "object",
+            "properties": {
+                "statementType": {
+                    "type": "string",
+                    "enum": [
+                        "MOVE",
+                        "ADD",
+                        "SUBTRACT",
+                        "MULTIPLY",
+                        "DIVIDE",
+                        "IF",
+                        "PERFORM",
+                        "DISPLAY",
+                        "ACCEPT",
+                        "OPEN",
+                        "READ",
+                        "WRITE",
+                        "CLOSE",
+                        "STOP RUN"
+                    ]
+                },
+                "operands": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "Operands or variables used in the statement."
+                },
+                "condition": {
+                    "type": "string",
+                    "description": "Condition for IF statements (e.g., 'EMPLOYEE-SALARY > 5000')."
+                },
+                "performType": {
+                    "type": "string",
+                    "enum": [
+                        "INLINE",
+                        "PROCEDURE"
+                    ],
+                    "description": "Defines whether PERFORM is inline or calls a procedure.",
+                    "nullable": true
+                },
+                "subroutine": {
+                    "type": "string",
+                    "description": "Name of a COBOL procedure to perform (if PERFORM is used).",
+                    "nullable": true
+                }
+            },
+            "required": [
+                "statementType"
+            ],
+            "description": "Defines a single COBOL procedure statement."
+        }
+    },
+    "type": "object",
+    "properties": {
+        "programName": {
+            "type": "string"
+        },
+        "dataDivision": {
+            "type": "array",
+            "items": {
+                "$ref": "#/$defs/DataDeclaration"
+            }
+        },
+        "procedureDivision": {
+            "type": "array",
+            "items": {
+                "$ref": "#/$defs/ProcedureStatement"
+            }
+        }
+    },
+    "required": [
+        "programName",
+        "dataDivision",
+        "procedureDivision"
+    ]
+}
