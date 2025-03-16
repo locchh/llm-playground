@@ -25,6 +25,10 @@ Supervised Fine-Tuning (SFT) is a critical process for adapting pre-trained lang
 
 - *A chat template is a [Jinja template](https://jinja.palletsprojects.com/en/3.1.x/templates/) stored in the tokenizers [chat_template](https://huggingface.co/docs/transformers/main_classes/tokenizer#transformers.PreTrainedTokenizer.chat_template) attribute.*
 
+- *The easiest way to start writing Jinja templates is to refer to existing templates. Use `print(tokenizer.chat_template)` on any chat model to see what template it’s using. Try starting with simple models that don’t call any tools or support RAG.*
+
+- *A base model is trained on raw text data to predict the next token, while an instruct model is fine-tuned specifically to follow instructions and engage in conversations*
+
 ## References
 
 - [Template writing](https://huggingface.co/docs/transformers/main/en/chat_templating_writing)
