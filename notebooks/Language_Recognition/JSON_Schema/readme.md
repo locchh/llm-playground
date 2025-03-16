@@ -22,6 +22,10 @@ In JSON Schema terminology, `$schema` and `$id` are **schema keywords**, `title`
 
 # references
 
+[ Fine-tuning LLM to Generate Persian Product Catalogs in JSON Format](https://huggingface.co/learn/cookbook/en/fine_tuning_llm_to_generate_persian_product_catalogs_in_json_format)
+
+[BaSalam/entity-attribute-dataset-GPT-3.5-generated-v1](https://huggingface.co/datasets/BaSalam/entity-attribute-dataset-GPT-3.5-generated-v1)
+
 [JSON Schema: A Media Type for Describing JSON Documents](https://json-schema.org/draft/2020-12/json-schema-core)
 
 [JON Schema](https://json-schema.org/learn/getting-started-step-by-step#creating-your-first-schema)
@@ -33,7 +37,6 @@ In JSON Schema terminology, `$schema` and `$id` are **schema keywords**, `title`
 [Regular Expressions](https://json-schema.org/understanding-json-schema/reference/regular_expressions)
 
 [Modular JSON Schema combination](https://json-schema.org/understanding-json-schema/structuring)
-
 
 [JSON Schema Docs](https://www.learnjsonschema.com/2020-12/)
 
