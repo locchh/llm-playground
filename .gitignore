@@ -18,3 +18,5 @@ __pycache__
 tmp
 sft_output
 SmolLM2-FT-MyDataset
+smol_dpo_output
+SmolLM2-FT-DPO

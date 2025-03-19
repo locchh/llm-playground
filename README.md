@@ -13,7 +13,7 @@ A sandbox environment to experiment with large language models and various NLP t
 
 - **Update Hands-on Notebooks**: Revise and enhance [notebooks](./notebooks) to incorporate the latest technologies and methodologies. ✍️
 
-- **[llmondex](https://github.com/locchh/llmondex)**: Curate and manage a collection of widely used Large Language Models (LLMs), along with their evaluation methods and benchmarks. 📑
+- Curate and manage a collection of widely used Large Language Models (LLMs), along with their evaluation methods and benchmarks. 📑
 
 - **Fine-tuning Series**: Develop a series of proof-of-concept (POC) repositories for fine-tuning LLMs, hosted on GitHub (e.g.,[ft2](https://github.com/locchh/ft2), [ft3](https://github.com/locchh/ft3), etc.). 🔥
 
