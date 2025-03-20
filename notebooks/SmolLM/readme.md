@@ -20,3 +20,5 @@
 [bigcode/the-stack-smol](https://huggingface.co/datasets/bigcode/the-stack-smol)
 
 [distilabel](https://distilabel.argilla.io/latest/)
+
+[lighteval](https://huggingface.co/docs/lighteval/index)
