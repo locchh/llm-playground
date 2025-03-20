@@ -7,7 +7,7 @@
 ### Training pipeline
 
 <div align="center">
-  <img src="../assets/fig.svg" alt="img">
+  <img src="../assets/multi_state.svg" alt="img">
 </div>
 
 ### Comparison of LLM Training & Adaptation Methods
