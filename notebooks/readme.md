@@ -1,13 +1,13 @@
-### Training pipeline
-
-<div align="center">
-  <img src="../assets/fig.svg" alt="img">
-</div>
-
 ### Example of the model's family
 
 <div align="center">
   <img src="https://camo.githubusercontent.com/3268f2a98c9988140cfab14d6d5379e29f67d5325a7015bf9984898f66b0ec20/68747470733a2f2f63646e2d75706c6f6164732e68756767696e67666163652e636f2f70726f64756374696f6e2f75706c6f6164732f3631633134313334326161633736346365313635346534332f5276486a646c52543567475174356d4a75685848392e706e67" alt="img">
+</div>
+
+### Training pipeline
+
+<div align="center">
+  <img src="../assets/fig.svg" alt="img">
 </div>
 
 ### Comparison of LLM Training & Adaptation Methods
