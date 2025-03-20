@@ -18,3 +18,5 @@
 [HuggingFaceTB/smoltalk](https://huggingface.co/datasets/HuggingFaceTB/smoltalk)
 
 [bigcode/the-stack-smol](https://huggingface.co/datasets/bigcode/the-stack-smol)
+
+[distilabel](https://distilabel.argilla.io/latest/)
