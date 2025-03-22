@@ -37,13 +37,13 @@
 
 ### TODO
 
-1. [agent](notebooks/Agents-Course)
-2. [quantization](notebooks/Quantization)
-3. [langgraph](notebooks/langgraph)
-4. [llamaindex](notebooks/llamaindex)
-5. [llamacpp](notebooks/llamacpp)
-6. [ollama](notebooks/ollama)
-7. [vllm](notebooks/vllm)
-8. [lighteval](notebooks/lighteval)
-9. [distilabel](notebooks/distilabel)
-10. [TGI](notebooks/TGI)
+1. [agent](./Agents-Course)
+2. [quantization](./Quantization)
+3. [langgraph](./langgraph)
+4. [llamaindex](./llamaindex)
+5. [llamacpp](./llamacpp)
+6. [ollama](./ollama)
+7. [vllm](./vllm)
+8. [lighteval](./lighteval)
+9. [distilabel](./distilabel)
+10. [TGI](./TGI)
