@@ -33,3 +33,17 @@
 5. **Prompt tuning** is the easiest and cheapest way to modify behavior without training.  
 6. **RAG** is ideal for dynamic knowledge injection but adds system complexity.  
 7. **MoE** is useful for scaling large models efficiently but requires complex inference pipelines.
+
+
+### TODO
+
+1. [agent](notebooks/Agents-Course)
+2. [quantization](notebooks/Quantization)
+3. [langgraph](notebooks/langgraph)
+4. [llamaindex](notebooks/llamaindex)
+5. [llamacpp](notebooks/llamacpp)
+6. [ollama](notebooks/ollama)
+7. [vllm](notebooks/vllm)
+8. [lighteval](notebooks/lighteval)
+9. [distilabel](notebooks/distilabel)
+10. [TGI](notebooks/TGI)
