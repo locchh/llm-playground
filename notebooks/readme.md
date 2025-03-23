@@ -4,6 +4,8 @@
   <img src="https://camo.githubusercontent.com/3268f2a98c9988140cfab14d6d5379e29f67d5325a7015bf9984898f66b0ec20/68747470733a2f2f63646e2d75706c6f6164732e68756767696e67666163652e636f2f70726f64756374696f6e2f75706c6f6164732f3631633134313334326161633736346365313635346534332f5276486a646c52543567475174356d4a75685848392e706e67" alt="img">
 </div>
 
+Other well-known LLM models include GPT, Llama, DeepSeek, Qwen, Mistral, SmolLM2, Gemma, etc.
+
 ### Training pipeline
 
 <div align="center">
@@ -34,7 +36,6 @@
 6. **RAG** is ideal for dynamic knowledge injection but adds system complexity.  
 7. **MoE** is useful for scaling large models efficiently but requires complex inference pipelines.
 
-
 ### TODO
 
 1. [agent](./Agents-Course)
@@ -47,3 +48,8 @@
 8. [lighteval](./lighteval)
 9. [distilabel](./distilabel)
 10. [TGI](./TGI)
+
+### Refs
+
+- [SmolLM](https://huggingface.co/collections/HuggingFaceTB/smollm-6695016cad7167254ce15966)
+- [SmolLM2](https://huggingface.co/collections/HuggingFaceTB/smollm2-6723884218bcda64b34d7db9)
