@@ -169,5 +169,10 @@ COMMENT : '//' ~[\r\n]* -> skip ;
 err : . { System.err.println("Unexpected character: " + $text); } ;
 
 ```
+[antlr4](https://github.com/antlr/antlr4)
 
 [grammars-v4](https://github.com/antlr/grammars-v4)
+
+[lark](https://github.com/lark-parser/lark)
+
+[tree-sitter](https://github.com/tree-sitter/tree-sitter)
