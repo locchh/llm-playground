@@ -1,69 +1,151 @@
-You can absolutely transcoded Japanese text from one encoding (say, EUC-JP, ISO-2022-JP, or Shift\_JIS) into another (UTF-8 or Shift\_JIS) without altering the “look” of the characters, as long as:
+## Overview
 
-1. You decode the bytes using the *correct* source encoding
-2. You re-encode into the *desired* target encoding
-3. You normalize if you care about Unicode canonical form (NFC vs NFD), to keep combining marks consistent
+You can transcode Japanese text from one encoding (EUC-JP, ISO-2022-JP, Shift\_JIS, etc.) into another (UTF-8, Shift\_JIS) without altering the “look” of the characters, so long as you:
 
-Here are a couple of straightforward ways:
+1. **Decode** the source bytes using the *correct* source encoding.
+2. **Normalize** (if desired) to a consistent Unicode canonical form (NFC or NFD).
+3. **Re-encode** into your *target* encoding.
+
+If any step is done incorrectly—e.g. using the wrong source encoding or skipping normalization—you may see replacement marks like `?` or `�`. The recipes below will help you avoid that.
 
 ---
 
-## 1. Using the `iconv` command‐line tool
+## 1. Command-Line Converters
+
+### 1.1 iconv
+
+A lightweight, ubiquitous tool for basic encoding conversions.
 
 ```bash
-# Convert from EUC-JP to UTF-8
-iconv -f euc-jp -t utf-8 input.txt > output_utf8.txt
+# EUC-JP → UTF-8
+iconv -f euc-jp   -t utf-8     input.txt    > output_utf8.txt
 
-# Convert from UTF-8 to Shift_JIS
-iconv -f utf-8 -t shift_jis input_utf8.txt > output_sjis.txt
-```
+# UTF-8 → Shift_JIS
+iconv -f utf-8    -t shift_jis input_utf8.txt > output_sjis.txt
 
-* `-f` specifies the **from** encoding
-* `-t` specifies the **to** encoding
-* This will faithfully preserve every Japanese character’s visual form.
-
-If you need normalization (to NFC), you can pipe through `uconv` (from ICU):
-
-```bash
+# (Optional) Normalize to NFC via ICU’s uconv
 iconv -f utf-8 -t utf-8 input.txt | uconv -x any-nfc > normalized.txt
 ```
 
+* `-f`: source encoding
+* `-t`: target encoding
+
 ---
 
-## 2. In Python
+### 1.2 nkf (Network Kanji Filter)
+
+Built specifically for Japanese. Auto-detects encodings, fixes newlines, and handles MIME mail.
+
+```bash
+# Shift_JIS → UTF-8
+nkf -w input.txt > output_utf8.txt
+
+# UTF-8 → Shift_JIS
+nkf -s input.txt > output_sjis.txt
+
+# Guess encoding
+nkf --guess input.txt
+```
+
+**Install**
+
+```bash
+# macOS
+brew install nkf
+
+# Ubuntu
+sudo apt install nkf
+```
+
+---
+
+### 1.3 uconv (ICU)
+
+Part of the International Components for Unicode—great for conversions plus normalization.
+
+```bash
+# Shift_JIS → UTF-8
+uconv -f shift_jis -t utf-8 input.txt > output.txt
+
+# Normalize (NFC)
+uconv -x any-nfc input.txt > normalized.txt
+```
+
+**Install**
+
+```bash
+sudo apt install icu-devtools
+```
+
+---
+
+### 1.4 enca (Extremely Naive Charset Analyser)
+
+Detects unknown encodings; pair with another tool for conversion.
+
+```bash
+enca -L japanese input.txt
+# (use its output as the `-f` argument to iconv/uconv/nkf)
+```
+
+---
+
+## 2. Programmable Pipelines in Python
+
+### 2.1 Direct Conversion + Normalization
 
 ```python
-# -*- coding: utf-8 -*-
 import io
 import unicodedata
 
-# 1) Read the original bytes, decoding with the correct source encoding:
+# 1) Read raw bytes, decode with source encoding
 with open("input_sjis.txt", "rb") as f:
-    data = f.read()
-text = data.decode("shift_jis")
+    raw = f.read()
+text = raw.decode("shift_jis")
 
-# 2) Optionally normalize (e.g. NFC) to ensure canonical character forms:
+# 2) Normalize to NFC (optional, but recommended)
 text = unicodedata.normalize("NFC", text)
 
-# 3) Write out as UTF-8 (or shift_jis) bytes:
+# 3a) Write as UTF-8
 with io.open("output_utf8.txt", "w", encoding="utf-8") as f:
     f.write(text)
 
-# Or back to Shift_JIS:
+# 3b) Or write back to Shift_JIS
 with io.open("output_sjis.txt", "w", encoding="shift_jis") as f:
     f.write(text)
 ```
 
-### Why normalization?
+### 2.2 Auto-Detection + Conversion
 
-Even if two characters *look* the same, Unicode can represent them in multiple ways (e.g. composed vs. decomposed). Using `unicodedata.normalize("NFC", …)` ensures every character is in its composed form, which you want if you’re preserving exact visuals and avoiding surprises.
+```python
+import chardet
+import unicodedata
+import io
+
+# 1) Detect
+with open("input.txt", "rb") as f:
+    raw = f.read()
+enc = chardet.detect(raw)['encoding']
+
+# 2) Decode → normalize
+text = raw.decode(enc)
+text = unicodedata.normalize("NFC", text)
+
+# 3) Re-encode to UTF-8
+with io.open("output_utf8.txt", "w", encoding="utf-8") as f:
+    f.write(text)
+```
+
+> **Tip:** you can swap `"utf-8"` for `"shift_jis"` (or any supported codec) in step 3 to target a different encoding.
 
 ---
 
-### Key tips
+## 3. Quick-Reference Summary
 
-* **Always** use the *correct* source encoding when decoding.
-* Don’t do a blind “re-encode” without decoding first.
-* If you ever see “?,” “�,” or other replacement marks, it means a character couldn’t round-trip—in that case, double-check your source encoding.
-
-With those steps you’ll maintain perfect visual fidelity when going between Shift\_JIS, UTF-8, EUC-JP, etc.
+| Tool       | Detection                      | Conversion                      | Normalization             | Best for…                         |
+| ---------- | ------------------------------ | ------------------------------- | ------------------------- | --------------------------------- |
+| **nkf**    | ✔️ auto                        | SJIS/EUC/ISO/UTF8               | —                         | Japanese-specific pipelines       |
+| **uconv**  | —                              | 🌐 many encodings               | NFC, NFD, etc.            | Unicode-cleanup + transforms      |
+| **iconv**  | —                              | 🌐 many encodings               | — (use uconv next)        | Lightweight, everywhere available |
+| **enca**   | ✔️                             | (none)                          | —                         | Identifying unknown source enc.   |
+| **Python** | via chardet/charset-normalizer | any codec via `decode`/`encode` | NFC/NFD via `unicodedata` | Custom scripts & batch jobs       |
