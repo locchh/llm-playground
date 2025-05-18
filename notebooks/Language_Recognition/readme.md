@@ -76,6 +76,8 @@
 
 - *Collaborating with AI to develop grammar helps you gain a deep understanding of grammatical structures and the usage of each component, while reducing your effort.*
 
+Here is the recommended grammar skeleton:
+
 ```
 //  Header (Optional, for Imports & Configuration)
 
