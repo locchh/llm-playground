@@ -21,12 +21,6 @@ Here’s a refined and completed version of your section, including a polished �
 * Include both **valid and invalid** code examples to help the AI identify potential ambiguities or parsing issues.
 * Organize examples by category (e.g., variable declaration, control flow, functions) to improve structure and accuracy.
 
----
-
-Here is a polished and professional version of your **Step 2**, rewritten for clarity, grammar, and consistency, while preserving your intent:
-
----
-
 #### Step 2: Write a Pseudo Grammar and Collaborate with AI
 
 * Based on your **Mini Programming Language Documentation** and the **typical source code files**, attempt to **write a draft of the grammar yourself**.
@@ -45,11 +39,6 @@ Here is a polished and professional version of your **Step 2**, rewritten for cl
 ```text
 Here is my pseudo grammar based on my documentation and code samples. Please improve the grammar rules while strictly preserving my format. Do not rewrite the entire structure — only enhance or correct what’s necessary.
 ```
----
-
-Here’s a refined and professional version of your **Step 3**, with improved grammar, clarity, and formatting:
-
----
 
 #### **Step 3: Parse Code Using the Grammar with a Gradual Content-Growth Strategy**
 
