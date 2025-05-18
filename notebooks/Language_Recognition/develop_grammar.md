@@ -1,7 +1,5 @@
 ## Develop Grammar
 
-Here’s a refined and completed version of your section, including a polished “Tips” subsection and maintaining your intended style and tone:
-
 ### 🤝 Develop Grammar Process with AI
 
 #### Step 1: Co-Develop Documentation with AI
