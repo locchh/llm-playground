@@ -1,0 +1,51 @@
+      *> Code validated and transformed by COBOL Validator
+      *> Timestamp: Sun Jun  1 12:02:03 AM +07 2025
+      *> Sample COBOL program with preprocessor directives
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. LEGACYAPP.
+      
+       ENVIRONMENT DIVISION.
+       CONFIGURATION SECTION.
+       SOURCE-COMPUTER. X8086.
+       OBJECT-COMPUTER. X8086.
+      
+      *> Customer data definition
+       01 CUSTOMER-RECORD.
+          05 CUSTOMER-ID          PIC 9(6).
+          05 CUSTOMER-NAME        PIC X(30).
+          05 CUSTOMER-ADDRESS.
+             10 STREET            PIC X(30).
+             10 CITY              PIC X(20).
+             10 STATE             PIC X(2).
+             10 ZIP-CODE          PIC 9(5).
+          05 CUSTOMER-STATUS      PIC X(10).
+      
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01 WS-CURRENT-DATE.
+          05 WS-YEAR             PIC 9(4).
+          05 WS-MONTH            PIC 9(2).
+          05 WS-DAY              PIC 9(2).
+      
+      
+       PROCEDURE DIVISION.
+       MAIN-LOGIC.
+           DISPLAY "Legacy Application Started".
+           
+           MOVE FUNCTION CURRENT-DATE TO WS-FUNCTION CURRENT-DATE.
+           DISPLAY "Current Date: " WS-YEAR "/" WS-MONTH "/" WS-DAY.
+           
+           PERFORM PROCESS-CUSTOMER.
+           
+           EXEC SQL
+              SELECT customer_name, customer_id 
+              FROM customers
+              WHERE status = 'ACTIVE'
+           END-EXEC.
+           
+           STOP RUN.
+           
+       PROCESS-CUSTOMER.
+           DISPLAY "Processing customer: " CUSTOMER-NAME.
+           DISPLAY "ID: " CUSTOMER-ID.
+           DISPLAY "Status: " CUSTOMER-STATUS.
