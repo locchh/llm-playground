@@ -1,0 +1,468 @@
+{
+  "program_id": "SAMPLE",
+  "divisions": {
+    "IDENTIFICATION": {
+      "line": 4,
+      "sections": {}
+    },
+    "ENVIRONMENT": {
+      "line": 8,
+      "sections": {
+        "CONFIGURATION": {
+          "line": 9,
+          "paragraphs": {}
+        }
+      }
+    },
+    "DATA": {
+      "line": 13,
+      "sections": {
+        "WORKING-STORAGE": {
+          "line": 14,
+          "paragraphs": {}
+        }
+      }
+    },
+    "PROCEDURE": {
+      "line": 42,
+      "sections": {}
+    }
+  },
+  "sections": {
+    "CONFIGURATION": {
+      "division": "ENVIRONMENT",
+      "line": 9
+    },
+    "WORKING-STORAGE": {
+      "division": "DATA",
+      "line": 14
+    }
+  },
+  "paragraphs": {
+    "PROGRAM-ID": {
+      "division": "IDENTIFICATION",
+      "section": null,
+      "line": 5,
+      "statements": []
+    },
+    "AUTHOR": {
+      "division": "IDENTIFICATION",
+      "section": null,
+      "line": 6,
+      "statements": []
+    },
+    "MAIN-LOGIC": {
+      "division": "PROCEDURE",
+      "section": "WORKING-STORAGE",
+      "line": 43,
+      "statements": [
+        {
+          "type": "DISPLAY",
+          "text": "DISPLAY \"COBOL Sample Program\".",
+          "line": 44,
+          "paragraph": "MAIN-LOGIC"
+        },
+        {
+          "type": "PERFORM",
+          "text": "PERFORM INITIALIZE-ROUTINE.",
+          "line": 45,
+          "paragraph": "MAIN-LOGIC"
+        },
+        {
+          "type": "PERFORM",
+          "text": "PERFORM PROCESS-DATA.",
+          "line": 46,
+          "paragraph": "MAIN-LOGIC"
+        },
+        {
+          "type": "PERFORM",
+          "text": "PERFORM CLEANUP-ROUTINE.",
+          "line": 47,
+          "paragraph": "MAIN-LOGIC"
+        },
+        {
+          "type": "STOP",
+          "text": "STOP RUN.",
+          "line": 48,
+          "paragraph": "MAIN-LOGIC"
+        }
+      ]
+    },
+    "INITIALIZE-ROUTINE": {
+      "division": "PROCEDURE",
+      "section": "WORKING-STORAGE",
+      "line": 50,
+      "statements": [
+        {
+          "type": "MOVE",
+          "text": "MOVE FUNCTION CURRENT-DATE(1:10) TO WS-CURRENT-DATE.",
+          "line": 51,
+          "paragraph": "INITIALIZE-ROUTINE"
+        },
+        {
+          "type": "DISPLAY",
+          "text": "DISPLAY \"Current Date: \" WS-CURRENT-DATE.",
+          "line": 52,
+          "paragraph": "INITIALIZE-ROUTINE"
+        }
+      ]
+    },
+    "PROCESS-DATA": {
+      "division": "PROCEDURE",
+      "section": "WORKING-STORAGE",
+      "line": 58,
+      "statements": [
+        {
+          "type": "MOVE",
+          "text": "MOVE SPACES TO CUSTOMER-NAME.",
+          "line": 59,
+          "paragraph": "PROCESS-DATA"
+        },
+        {
+          "type": "MOVE",
+          "text": "MOVE ZEROS TO CUSTOMER-ID.",
+          "line": 60,
+          "paragraph": "PROCESS-DATA"
+        },
+        {
+          "type": "DISPLAY",
+          "text": "DISPLAY \"Processing record: \" WS-COUNTER",
+          "line": 64,
+          "paragraph": "PROCESS-DATA"
+        },
+        {
+          "type": "PERFORM",
+          "text": "PERFORM GET-CUSTOMER-DATA",
+          "line": 65,
+          "paragraph": "PROCESS-DATA"
+        },
+        {
+          "type": "ADD",
+          "text": "ADD 1 TO CUSTOMER-COUNT",
+          "line": 66,
+          "paragraph": "PROCESS-DATA"
+        }
+      ]
+    },
+    "END-PERFORM": {
+      "division": "PROCEDURE",
+      "section": "WORKING-STORAGE",
+      "line": 67,
+      "statements": []
+    },
+    "GET-CUSTOMER-DATA": {
+      "division": "PROCEDURE",
+      "section": "WORKING-STORAGE",
+      "line": 69,
+      "statements": [
+        {
+          "type": "IF",
+          "text": "IF SQLCODE = 0",
+          "line": 77,
+          "condition": "SQLCODE = 0",
+          "paragraph": "GET-CUSTOMER-DATA"
+        },
+        {
+          "type": "DISPLAY",
+          "text": "DISPLAY \"Customer found: \" CUSTOMER-NAME",
+          "line": 78,
+          "paragraph": "GET-CUSTOMER-DATA"
+        },
+        {
+          "type": "DISPLAY",
+          "text": "DISPLAY \"Customer not found for ID: \" WS-COUNTER",
+          "line": 80,
+          "paragraph": "GET-CUSTOMER-DATA"
+        }
+      ]
+    },
+    "CLEANUP-ROUTINE": {
+      "division": "PROCEDURE",
+      "section": "WORKING-STORAGE",
+      "line": 83,
+      "statements": [
+        {
+          "type": "DISPLAY",
+          "text": "DISPLAY \"Processing complete\".",
+          "line": 88,
+          "paragraph": "CLEANUP-ROUTINE"
+        },
+        {
+          "type": "MOVE",
+          "text": "MOVE ZERO TO RETURN-CODE.",
+          "line": 89,
+          "paragraph": "CLEANUP-ROUTINE"
+        }
+      ]
+    }
+  },
+  "data_items": [
+    {
+      "level": "01",
+      "name": "CUSTOMER-RECORD",
+      "line": 19
+    },
+    {
+      "level": "05",
+      "name": "CUSTOMER-ID",
+      "line": 20,
+      "picture": "9(6)"
+    },
+    {
+      "level": "05",
+      "name": "CUSTOMER-NAME",
+      "line": 21,
+      "picture": "X(30)"
+    },
+    {
+      "level": "05",
+      "name": "CUSTOMER-ADDRESS",
+      "line": 22,
+      "picture": "X(50)"
+    },
+    {
+      "level": "05",
+      "name": "CUSTOMER-PHONE",
+      "line": 23,
+      "picture": "X(15)"
+    },
+    {
+      "level": "05",
+      "name": "CUSTOMER-EMAIL",
+      "line": 24,
+      "picture": "X(50)"
+    },
+    {
+      "level": "05",
+      "name": "CUSTOMER-STATUS",
+      "line": 25,
+      "picture": "X(1)"
+    },
+    {
+      "level": "88",
+      "name": "CUSTOMER-ACTIVE",
+      "line": 26,
+      "value": "'A'"
+    },
+    {
+      "level": "88",
+      "name": "CUSTOMER-INACTIVE",
+      "line": 27,
+      "value": "'I'"
+    },
+    {
+      "level": "88",
+      "name": "CUSTOMER-PENDING",
+      "line": 28,
+      "value": "'P'"
+    },
+    {
+      "level": "05",
+      "name": "CUSTOMER-JOIN-DATE",
+      "line": 29,
+      "picture": "X(10)"
+    },
+    {
+      "level": "05",
+      "name": "CUSTOMER-LAST-ORDER",
+      "line": 30,
+      "picture": "X(10)"
+    },
+    {
+      "level": "01",
+      "name": "CUSTOMER-COUNTS",
+      "line": 32
+    },
+    {
+      "level": "05",
+      "name": "CUSTOMER-COUNT",
+      "line": 33,
+      "picture": "9(5) VALUE ZERO",
+      "value": "ZERO"
+    },
+    {
+      "level": "05",
+      "name": "ACTIVE-COUNT",
+      "line": 34,
+      "picture": "9(5) VALUE ZERO",
+      "value": "ZERO"
+    },
+    {
+      "level": "05",
+      "name": "INACTIVE-COUNT",
+      "line": 35,
+      "picture": "9(5) VALUE ZERO",
+      "value": "ZERO"
+    },
+    {
+      "level": "01",
+      "name": "WS-VARIABLES",
+      "line": 37
+    },
+    {
+      "level": "05",
+      "name": "WS-RETURN-CODE",
+      "line": 38,
+      "picture": "S9(4) COMP VALUE ZERO",
+      "value": "ZERO"
+    },
+    {
+      "level": "05",
+      "name": "WS-CURRENT-DATE",
+      "line": 39,
+      "picture": "X(10) VALUE SPACES",
+      "value": "SPACES"
+    },
+    {
+      "level": "05",
+      "name": "WS-COUNTER",
+      "line": 40,
+      "picture": "9(4)  VALUE ZERO",
+      "value": "ZERO"
+    }
+  ],
+  "statements": [
+    {
+      "type": "DISPLAY",
+      "text": "DISPLAY \"COBOL Sample Program\".",
+      "line": 44,
+      "paragraph": "MAIN-LOGIC"
+    },
+    {
+      "type": "PERFORM",
+      "text": "PERFORM INITIALIZE-ROUTINE.",
+      "line": 45,
+      "paragraph": "MAIN-LOGIC"
+    },
+    {
+      "type": "PERFORM",
+      "text": "PERFORM PROCESS-DATA.",
+      "line": 46,
+      "paragraph": "MAIN-LOGIC"
+    },
+    {
+      "type": "PERFORM",
+      "text": "PERFORM CLEANUP-ROUTINE.",
+      "line": 47,
+      "paragraph": "MAIN-LOGIC"
+    },
+    {
+      "type": "STOP",
+      "text": "STOP RUN.",
+      "line": 48,
+      "paragraph": "MAIN-LOGIC"
+    },
+    {
+      "type": "MOVE",
+      "text": "MOVE FUNCTION CURRENT-DATE(1:10) TO WS-CURRENT-DATE.",
+      "line": 51,
+      "paragraph": "INITIALIZE-ROUTINE"
+    },
+    {
+      "type": "DISPLAY",
+      "text": "DISPLAY \"Current Date: \" WS-CURRENT-DATE.",
+      "line": 52,
+      "paragraph": "INITIALIZE-ROUTINE"
+    },
+    {
+      "type": "MOVE",
+      "text": "MOVE SPACES TO CUSTOMER-NAME.",
+      "line": 59,
+      "paragraph": "PROCESS-DATA"
+    },
+    {
+      "type": "MOVE",
+      "text": "MOVE ZEROS TO CUSTOMER-ID.",
+      "line": 60,
+      "paragraph": "PROCESS-DATA"
+    },
+    {
+      "type": "DISPLAY",
+      "text": "DISPLAY \"Processing record: \" WS-COUNTER",
+      "line": 64,
+      "paragraph": "PROCESS-DATA"
+    },
+    {
+      "type": "PERFORM",
+      "text": "PERFORM GET-CUSTOMER-DATA",
+      "line": 65,
+      "paragraph": "PROCESS-DATA"
+    },
+    {
+      "type": "ADD",
+      "text": "ADD 1 TO CUSTOMER-COUNT",
+      "line": 66,
+      "paragraph": "PROCESS-DATA"
+    },
+    {
+      "type": "IF",
+      "text": "IF SQLCODE = 0",
+      "line": 77,
+      "condition": "SQLCODE = 0",
+      "paragraph": "GET-CUSTOMER-DATA"
+    },
+    {
+      "type": "DISPLAY",
+      "text": "DISPLAY \"Customer found: \" CUSTOMER-NAME",
+      "line": 78,
+      "paragraph": "GET-CUSTOMER-DATA"
+    },
+    {
+      "type": "DISPLAY",
+      "text": "DISPLAY \"Customer not found for ID: \" WS-COUNTER",
+      "line": 80,
+      "paragraph": "GET-CUSTOMER-DATA"
+    },
+    {
+      "type": "DISPLAY",
+      "text": "DISPLAY \"Processing complete\".",
+      "line": 88,
+      "paragraph": "CLEANUP-ROUTINE"
+    },
+    {
+      "type": "MOVE",
+      "text": "MOVE ZERO TO RETURN-CODE.",
+      "line": 89,
+      "paragraph": "CLEANUP-ROUTINE"
+    }
+  ],
+  "sql_statements": [
+    {
+      "type": "SQL",
+      "text": "EXEC SQL CONNECT TO mydatabase USER :username USING :password END-EXEC.",
+      "line": 54
+    },
+    {
+      "type": "SQL",
+      "text": "EXEC SQL SELECT customer_id, customer_name, customer_address INTO :CUSTOMER-ID, :CUSTOMER-NAME, :CUSTOMER-ADDRESS FROM customers WHERE customer_id = :WS-COUNTER END-EXEC.",
+      "line": 70
+    },
+    {
+      "type": "SQL",
+      "text": "EXEC SQL DISCONNECT END-EXEC.",
+      "line": 84
+    },
+    {
+      "type": "SQL",
+      "text": "EXEC SQL CONNECT TO mydatabase USER :username USING :password END-EXEC.",
+      "line": 54
+    },
+    {
+      "type": "SQL",
+      "text": "EXEC SQL SELECT customer_id, customer_name, customer_address INTO :CUSTOMER-ID, :CUSTOMER-NAME, :CUSTOMER-ADDRESS FROM customers WHERE customer_id = :WS-COUNTER END-EXEC.",
+      "line": 70
+    },
+    {
+      "type": "SQL",
+      "text": "EXEC SQL DISCONNECT END-EXEC.",
+      "line": 84
+    }
+  ],
+  "identification_info": {
+    "author": "CASCADE-AI."
+  },
+  "configuration": {
+    "SOURCE_COMPUTER": "X86-64",
+    "OBJECT_COMPUTER": "X86-64"
+  }
+}
