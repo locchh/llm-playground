@@ -1,54 +1,83 @@
-# 📊 Code Analysis Toolkit
+## 🔍 Static Analysis Capabilities
 
-This project provides a suite of tools for **static analysis** and **reverse engineering** of source code, particularly useful for legacy systems and mainframe applications. It aims to improve code quality, support modernization, and assist in understanding complex logic flows.
+Unlock key insights into your codebase with advanced static analysis techniques:
+
+### ✅ 1. Syntax Analysis
+
+* Validates that source code conforms to the grammar rules of its language.
+* Detects syntax errors early in the development or migration process.
+
+### 🔄 2. Flowchart Generation
+
+* Generates visual diagrams from code to illustrate control flow.
+* Simplifies understanding of legacy code logic and decision paths.
+
+### 🔁 3. Control Flow Analysis
+
+* Analyzes the sequence of program instructions.
+* Supports debugging, performance tuning, and behavior analysis.
+
+### 📈 4. Data Flow Analysis
+
+* Tracks the lifecycle of data (definition, use, modification).
+* Helps detect:
+
+  * Unused variables
+  * Dead code
+  * Potential runtime issues
+
+### 📦 5. Data Structure Analysis
+
+* Evaluates the usage and efficiency of data structures.
+* Aids in refactoring, modernization, and performance optimization.
+
+### 🔗 6. Data Dependency Analysis
+
+* Maps out dependencies between data elements and variables.
+* Useful for:
+
+  * Code impact analysis
+  * Improving modularity
+  * Refactoring legacy logic
 
 ---
 
-## 🔍 Static Analysis Features
+## 🧠 Reverse Engineering
 
-Gain deeper insights into your codebase with the following capabilities:
-
-1. **Syntax Analysis**
-   Ensures the source code conforms to the defined grammar of the programming language. It helps detect syntax errors early in the development cycle.
-
-2. **Flowchart Generation**
-   Automatically generates visual diagrams that represent the logical structure and execution paths of programs, making complex code easier to understand.
-
-3. **Control Flow Analysis**
-   Examines the order in which statements or instructions execute. This is essential for debugging, optimization, and understanding the code’s execution behavior.
-
-4. **Data Flow Analysis**
-   Tracks how data is defined, used, and modified throughout the program. Useful for identifying dead code, uninitialized variables, and potential bugs.
-
-5. **Data Structure Analysis**
-   Analyzes the usage and performance characteristics of data structures in the code. It supports refactoring and performance tuning.
-
-6. **Data Dependency Analysis**
-   Identifies relationships and dependencies between variables and data elements, which is valuable for understanding code impact and improving modularity.
-
----
-
-## 🔁 Reverse Engineering
-
-Reverse engineering allows users to transform complex, undocumented legacy code into understandable visual and structural artifacts.
+Easily convert legacy or poorly documented code into comprehensible formats using reverse engineering tools:
 
 ![Reverse Engineering Overview](pic.png)
 
-Typical outputs include:
+### Key Deliverables:
 
-* Flowcharts for logic visualization
-* Abstract representations of control and data dependencies
-* Parsed structures of legacy code for easier migration or documentation
+* **Flowcharts** to visualize logic and control paths.
+* **Abstract models** to represent control/data dependencies.
+* **Parsed structures** for easier migration and refactoring.
+
+Ideal for:
+
+* Understanding legacy COBOL or mainframe code
+* Supporting modernization to modern architectures
+* Enhancing documentation and onboarding
 
 ---
 
-## 📚 References and Further Reading
+## 📚 Resources & Further Reading
 
-For deeper understanding and mainframe-specific guidance, refer to these resources:
+Expand your knowledge with these helpful guides and tools:
+
+### 🖥️ Mainframe & COBOL
 
 * [IBM z/OS Basic Skills](https://www.ibm.com/docs/en/zos-basic-skills)
 * [Mainframes Tech Help](https://www.mainframestechhelp.com/)
 * [IBM Mainframer Portal](https://www.ibmmainframer.com/#)
 * [IBM Z Open Editor](https://ibm.github.io/zopeneditor-about/)
-* [Codefori Documentation](https://codefori.github.io/docs/)
 * [GnuCOBOL Project](https://gnucobol.sourceforge.io/)
+* [Learn COBOL in Y Minutes](https://learnxinyminutes.com/cobol/)
+
+### 🔧 Tools & Community
+
+* [Codefori Documentation](https://codefori.github.io/docs/)
+* [Zowe: Modern Mainframe Framework](https://www.zowe.org/)
+* [Sourcegraph: Universal Code Search](https://sourcegraph.com/)
+* [code2flow (Flowchart Generator)](https://github.com/scottrogowski/code2flow)
