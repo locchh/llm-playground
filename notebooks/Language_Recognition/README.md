@@ -101,7 +101,7 @@ grammar MyLang;
 // Entry point
 program : statement+ EOF ;
 
-// Parser Rules
+// High Level Parser Rules
 statement
     : ifStatement
     | assignment
@@ -115,7 +115,7 @@ loop        : 'while' condition 'do' block ;
 functionCall: ID '(' (expression (',' expression)*)? ')' ;
 block       : '{' statement* '}' ;
 
-// Expressions
+// Common Parser Rules
 expression : term (('+' | '-') term)* ;
 term       : factor (('*' | '/') factor)* ;
 factor     : NUMBER | ID | '(' expression ')' ;
@@ -153,6 +153,29 @@ err : . { System.err.println("Unexpected character: " + $text); } ;
 ```
 
 ---
+
+## Strategies
+
+### Tree Traversal Strategies
+- Start from the current position
+- Top-down approach (Iterative)
+- Bottom-up approach (Iterative or Recursive)
+
+### Grammar Writing Strategies
+- Start with specific cases
+- Focus on overall comprehension first
+
+### Coverage Improvement Strategies
+- Depth-first (starting from the shallowest depth)
+- Error-driven (focus on rules with the most errors)
+- Coverage-driven (target untested or uncovered rules)
+- Divide and conquer
+
+## Error Details
+- Current rule being processed
+- Rule call stack
+- Error message
+- Error position in input
 
 ## 🧰 Tools for Grammar
 
