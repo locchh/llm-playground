@@ -2,10 +2,6 @@
 
 ## 📌 1. Syntax Analysis
 
-Certainly! Here's a clear and complete explanation of **Syntax Analysis** in the context of **mainframe code** (especially COBOL):
-
----
-
 ### 🧠 What is **Syntax Analysis**?
 
 **Syntax Analysis** is the process of analyzing the **structure** of source code to ensure it follows the grammatical rules of the programming language—in this case, **COBOL**.
