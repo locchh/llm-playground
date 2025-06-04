@@ -1,7 +1,5 @@
 # 📘 Comprehensive Guide to Mainframe Code Analysis
 
----
-
 ## 📌 1. Syntax Analysis
 
 ---
@@ -159,7 +157,7 @@ Used by:
 
 If you’re doing **automated COBOL analysis**, you'd want **Control Flow Analysis**. If you’re explaining the code to someone, **Flowchart Analysis** is more suitable.
 
-Would you like code to convert a COBOL program into either of these representations?
+---
 
 ## 📌 4. Data Structure Analysis
 
@@ -245,6 +243,7 @@ CUSTOMER-INFO
     ├── ORDER-ID
     └── ORDER-TOTAL
 ```
+---
 
 ## 📌 5. Data Flow Analysis (DFA)
 
@@ -385,6 +384,7 @@ To fix the undefined use of `RESTOCK-LEVEL`, we can add:
 
 Before the `PERFORM CHECK-STOCK`.
 
+---
 
 ## 📌 6. Data Dependency Analysis
 
@@ -466,6 +466,8 @@ So `WS-AMOUNT-A` indirectly influences `WS-FINAL`.
 | Micro Focus Enterprise Analyzer | Tracks inter-field dependencies even across copybooks |
 | ANTLR + Python custom parser    | Build your own dependency analyzer                    |
 | Mainframe field mapping tools   | Often used during modernization or DB refactoring     |
+
+---
 
 ## 📌 7. Call Graph Analysis
 
@@ -632,6 +634,8 @@ If there is **no `PERFORM UNUSED-PARAGRAPH`** or `GOTO` to it, it’s a **dead p
 | Improve Performance  | Smaller memory/IO footprint     |
 | Enable Modernization | Clean code = better refactoring |
 | Reduce Risk          | Dead code can hide logic errors |
+
+---
 
 ## 📌 9. CRUD Analysis
 
