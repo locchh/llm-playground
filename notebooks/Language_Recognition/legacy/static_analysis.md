@@ -2,9 +2,177 @@
 
 ## 📌 1. Syntax Analysis
 
+Certainly! Here's a clear and complete explanation of **Syntax Analysis** in the context of **mainframe code** (especially COBOL):
+
+---
+
+### 🧠 What is **Syntax Analysis**?
+
+**Syntax Analysis** is the process of analyzing the **structure** of source code to ensure it follows the grammatical rules of the programming language—in this case, **COBOL**.
+
+It is often the **first phase of program analysis** after tokenization and is essential for building tools like:
+
+* Code parsers
+* Static analyzers
+* Converters and transpilers
+* Refactoring tools
+
+### 🔧 What Does It Do?
+
+* **Parses** the COBOL source code.
+* Builds a **parse tree** or **abstract syntax tree (AST)**.
+* Validates whether the code conforms to the COBOL grammar.
+* Identifies **syntax errors** (e.g., missing `PERFORM`, misplaced `IF`, etc.).
+
+### 📄 Example: COBOL Syntax
+
+```cobol
+01 WS-AMOUNT PIC 9(5)V99 VALUE 0.
+
+IF WS-AMOUNT > 100
+    DISPLAY "TOO MUCH"
+ELSE
+    DISPLAY "OK".
+```
+
+**Parsed Syntax Tree** (simplified):
+
+```
+IF-STATEMENT
+├── CONDITION: WS-AMOUNT > 100
+├── THEN: DISPLAY "TOO MUCH"
+└── ELSE: DISPLAY "OK"
+```
+
+### 📊 Syntax Analysis Output
+
+| Output Type        | Description                                        |
+| ------------------ | -------------------------------------------------- |
+| **Parse Tree**     | Concrete structure of code based on full grammar   |
+| **AST (Abstract)** | Simplified tree focusing on logic structure        |
+| **Errors**         | Invalid tokens, misordered clauses, missing syntax |
+
+### 🧰 Tools for COBOL Syntax Analysis
+
+| Tool                 | Purpose                                      |
+| -------------------- | -------------------------------------------- |
+| **ANTLR**            | Grammar-based parser generator for COBOL     |
+| **Micro Focus**      | Built-in COBOL parsing and debugging         |
+| **IBM Rational RAA** | Parses and indexes COBOL for impact analysis |
+| **Lex/Yacc**         | Older tools for building grammar parsers     |
+
+### ✅ Why Syntax Analysis Matters
+
+| Purpose                 | Example                                      |
+| ----------------------- | -------------------------------------------- |
+| Code modernization      | Parse COBOL to translate into Java/Python    |
+| Linter/static checking  | Catch invalid patterns before compiling      |
+| Custom IDE tooling      | Syntax highlighting, code completion         |
+| Semantic analysis stage | Pre-requisite to analyzing control/data flow |
+
+### 🧩 Next Step After Syntax Analysis?
+
+After successful syntax parsing, you typically perform:
+
+* **Control Flow Analysis (CFA)** – To analyze execution order
+* **Data Flow Analysis (DFA)** – To track variable usage
+* **Dependency Graphs** – To understand relationships between variables, paragraphs, and files
+
 ---
 
 ## 📌 2. Flowchart Analysis
+
+### 🧭 What is **Flowchart Analysis**?
+
+**Flowchart Analysis** is the process of **visualizing the logical flow** of a COBOL program using **standard flowchart symbols** like decision diamonds, process rectangles, arrows, etc.
+
+This helps developers and analysts:
+
+* Understand program logic at a glance
+* Communicate business logic to non-programmers
+* Identify loops, branches, and procedural sequences
+
+### 🏗️ Flowchart vs Code
+
+#### Example COBOL Code:
+
+```cobol
+IF WS-AMOUNT > 100
+    PERFORM APPLY-DISCOUNT
+ELSE
+    PERFORM CHARGE-FULL
+```
+
+#### Corresponding Flowchart:
+
+```
+      +-------------------+
+      | Start             |
+      +-------------------+
+               |
+               v
+    +-----------------------+
+    | WS-AMOUNT > 100?      |
+    +-----------------------+
+          /        \  
+       Yes          No
+       /              \
++----------------+   +------------------+
+| APPLY-DISCOUNT |   | CHARGE-FULL      |
++----------------+   +------------------+
+         \             /
+          v           v
+     +-------------------+
+     |      End          |
+     +-------------------+
+```
+
+### 🧰 What Is Flowchart Analysis Used For?
+
+| Use Case                        | Benefit                                                |
+| ------------------------------- | ------------------------------------------------------ |
+| **Code comprehension**          | Understand control flow for debugging or onboarding    |
+| **Documentation**               | Create clear visual specs for business stakeholders    |
+| **Refactoring & reengineering** | Spot redundant or unreachable branches                 |
+| **Modernization efforts**       | Map procedural logic to structured or object paradigms |
+| **QA and Test Case Design**     | Identify logical paths for test scenarios              |
+
+### 🔁 Common Flowchart Elements in COBOL
+
+| Flowchart Element | COBOL Equivalent                     |
+| ----------------- | ------------------------------------ |
+| Start/End         | `PROGRAM-ID`, `STOP RUN`             |
+| Process           | `MOVE`, `COMPUTE`, `PERFORM`         |
+| Decision          | `IF`, `EVALUATE`, `WHEN`             |
+| Loop              | `PERFORM UNTIL`, `PERFORM VARYING`   |
+| Connector         | `GO TO`, or implicit paragraph jumps |
+
+
+### 🧠 Flowchart vs Control Flow Analysis
+
+| Feature        | Flowchart Analysis                | Control Flow Analysis                  |
+| -------------- | --------------------------------- | -------------------------------------- |
+| View           | Human-friendly diagrams           | Graph nodes & edges for tools          |
+| Purpose        | Understanding and communication   | Programmatic analysis and static tools |
+| Representation | Visual with symbols               | Abstract graph (e.g., CFG)             |
+| Use in tools   | Often generated for documentation | Used in optimization, verification     |
+
+### 🛠️ Tools That Generate Flowcharts for COBOL
+
+| Tool                                | Capability                                     |
+| ----------------------------------- | ---------------------------------------------- |
+| **IBM Rational RAA**                | Generates flowcharts from COBOL code           |
+| **Micro Focus Enterprise Analyzer** | Diagram COBOL program logic                    |
+| **YaCOBOL + Graphviz**              | Custom parsers with visual output              |
+| **VS Code Extensions + AI**         | Auto-generate flowcharts from logic (beta use) |
+
+### 📌 Summary
+
+**Flowchart Analysis** helps:
+
+* Quickly understand complex COBOL logic
+* Communicate with business users
+* Prepare for modernization and testing
 
 ---
 
@@ -163,7 +331,7 @@ If you’re doing **automated COBOL analysis**, you'd want **Control Flow Analys
 
 Here’s a clear explanation and example of **Data Structure Analysis** in **mainframe COBOL**, which helps you understand how data fields are declared, nested, and used across a program or system.
 
-## ✅ What Is Data Structure Analysis?
+### ✅ What Is Data Structure Analysis?
 
 **Data Structure Analysis (DSA)** in a mainframe context involves analyzing the **hierarchical layout and usage** of variables declared in:
 
