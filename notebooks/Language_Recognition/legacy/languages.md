@@ -18,3 +18,65 @@
 | 14 | LDL+              | Logic Definition Language Plus     |   | [Logic Definition Language Plus (LDL+) - Unisys](https://public.support.unisys.com/ABSuiteIC-7.0/index.jsp?topic=%2Feae_to_ab_suite_migration_reference%2Fhtml%2Fsection-000053769.htm)                                                                                     | Low-Code/No-Code, Model-Driven Dev, BPM tools     |
 | 15 | OGL               | Overlay Generation Language                    | Used to create, store, and manage overlays for printing with form definitions on IBM mainframes (z/OS, VM, VSE).                                          | [Overlay Generation Language (OGL) - IBM](https://www.ibm.com/docs/en/zos/2.1.0?topic=products-overlay-generation-language-ogl)                                           | Reporting tools, PDF libraries, Templating engines |
 | 16 | Easytrieve        | CA Easytrieve Report Generator                 | A report generation and data retrieval utility language, designed for quick and simple creation of reports from mainframe data sources.                     | [CA Easytrieve Language Reference - Broadcom](https://techdocs.broadcom.com/us/en/ca-mainframe-software/devops/ca-easytrieve-report-generator/11-6/language-reference.html)     | SQL, Python (Pandas), R, BI Tools (Tableau)     |
+
+Here’s an diagram of a **mainframe system architecture**, showing where each language fits into the system based on its usage. The layout is structured in **layers**, from low-level system code to business logic, job control, user interfaces, and data access.
+
+```
+                                    +-------------------------------------+
+                                    |         USER INTERFACES            |
+                                    |-------------------------------------|
+                                    | ISPF  |  BMS  | Easytrieve |  OGL  |
+                                    |-------|-------|------------|-------|
+                                    | IDE   | 3270  | Reports    | Forms |
+                                    +-------------------------------------+
+
+                    +-----------------------------------------------------------+
+                    |               JOB & WORKFLOW MANAGEMENT                   |
+                    |-----------------------------------------------------------|
+                    |         JCL         |      CLIST       |      WFL         |
+                    |---------------------|------------------|------------------|
+                    | Batch Jobs          | TSO Scripts      | MCP Workflows    |
+                    +-----------------------------------------------------------+
+
++---------------------------------------------------------------------------------------+
+|                                  BUSINESS & APP LOGIC                                 |
+|----------------------------------------------------------------------------------------|
+|    COBOL    |     PL/I     |    LDL+     |    Easytrieve    |        Algol           |
+|-------------|--------------|-------------|------------------|-------------------------|
+| Core logic  | Business +   | Model-Driven| Report/Query Lang| Scientific apps         |
+|             | scientific   | Logic Layer |                  |                         |
++---------------------------------------------------------------------------------------+
+
+          +----------------------------------------------------------------+
+          |                    REUSABLE STRUCTURES & DEFINITIONS          |
+          |----------------------------------------------------------------|
+          |          CopyBook         |       DASDL       |      DDL       |
+          |---------------------------|-------------------|----------------|
+          | COBOL Data Templates      | DMSII Schema Defs | SQL Schema     |
+          +----------------------------------------------------------------+
+
+                            +-------------------------------------+
+                            |         SYSTEM-LEVEL CODE           |
+                            |-------------------------------------|
+                            |       Assembler (HLASM)            |
+                            |-------------------------------------|
+                            | OS services, optimization, drivers |
+                            +-------------------------------------+
+
+                          +---------------------------------------+
+                          |     DATA STORAGE / ACCESS METHODS     |
+                          |---------------------------------------|
+                          |       VSAM        |       DB2         |
+                          |-------------------|-------------------|
+                          | Indexed Files     | SQL-based RDBMS   |
+                          +---------------------------------------+
+```
+
+| Layer                    | Purpose                                     | Technologies                         |
+| ------------------------ | ------------------------------------------- | ------------------------------------ |
+| **User Interfaces**      | Tools for users to interact with the system | ISPF, BMS, Easytrieve, OGL           |
+| **Job & Workflow**       | Batch execution and job control             | JCL, CLIST, WFL                      |
+| **Business & App Logic** | Core business processing logic              | COBOL, PL/I, LDL+, Easytrieve, Algol |
+| **Reusable Definitions** | Reusable data/structure definitions         | CopyBook, DASDL, DDL                 |
+| **System Code**          | Hardware-level, OS integration              | Assembler                            |
+| **Data Access**          | Storage and database access                 | VSAM, DB2                            |
