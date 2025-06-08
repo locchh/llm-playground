@@ -55,8 +55,26 @@ Easily convert legacy or poorly documented code into comprehensible formats usin
 <p align="center">
   <img src="pic.png" alt="Reverse engineering" width="800"/>
 </p>
-<p align="center"><strong>🎯 [Target] -> 🔍 Search + Retrieve -> 🧩 [Related Code] -> 👨‍💻 Developer -> 🛠️ Rebuild -> 🚀 [Modern Code]</strong></p>
+<p align="center"><strong>Reverse Engineering</strong></p>
 
+```
+🎯 [Target Feature]         - Identify the business feature to modernize  
+      ↓  
+🔍 Search + Retrieve        - Locate related code and data assets  
+      ↓  
+🧩 [Related Code]           - Legacy programs and data involved  
+      ↓  
+🧠 Reverse Engineering      - Analyze and understand legacy logic  
+      ↓  
+📄 [Requirements]           - Define modern system requirements  
+      ↓  
+👨‍💻 Developer              - Build implementation plan  
+      ↓  
+🛠️ Rebuild                  - Refactor, replatform, or rewrite  
+      ↓  
+🚀 [Modern Code]            - Deliver modernized feature in new stack
+
+```
 
 | Target Level               | Description                                                   | Example                             |
 | -------------------------- | ------------------------------------------------------------- | ----------------------------------- |
@@ -67,7 +85,6 @@ Easily convert legacy or poorly documented code into comprehensible formats usin
 | **Function / Program**     | Individual programs or routines                               | `calculateDeductible()` in COBOL    |
 | **Code Block / Statement** | Specific logic chunks or conditions                           | `IF CLAIM_TYPE = "MED"` block       |
 | **Data Element / Record**  | Specific data fields, database tables, or VSAM records        | `POLICY_ID`, `CLAIM_AMOUNT`         |
-
 
 ### Key Deliverables:
 
