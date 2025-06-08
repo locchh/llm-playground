@@ -59,48 +59,42 @@ Easily convert legacy or poorly documented code into comprehensible formats usin
 
 
 ```
-📦 Source Code + Data  (Existing legacy systems and artifacts)  
+📦 [Source Code + Data]  (Existing legacy systems and artifacts)  
         ↓  
-🔍 Discovery   (Discover the codebase to gain insights)
-🤖 Use LLMs to summarize modules, extract entry points, and generate system maps  
+        🔍 Discovery   (Discover the codebase to gain insights)
+        🤖 Use LLMs to summarize modules, extract entry points, and generate system maps  
         ↓  
 💡 [Insight]  (Observations about business logic, data use, and structure)  
         ↓  
-🧠 Understand  (Understand codebase to identify potential features)
-        ↓ 
-   🤖 Use AI to detect business rules, identify anomalies, and suggest patterns   
-   🤖 Ask LLMs to explain functions and generate flowcharts or call graphs  
+       🧠 Understand  (Understand codebase to identify potential features) 
+       🤖 Use AI to detect business rules, identify anomalies, and suggest patterns   
+       🤖 Ask LLMs to explain functions and generate flowcharts or call graphs  
         ↓  
 🎯 [Target Feature] + 📚 [Knowledge] 
         ↓  
-🔍 Search + Retrieve  (Identify the business feature to modernize + Locate related code and data assets)
-   🤖 Use AI to map business goals to code segments using embeddings or semantic search   
-   🤖 Use vector search + LLM agents to find relevant code, tables, and logic paths  
+        🔍 Search + Retrieve  (Identify the business feature to modernize + Locate related code and data assets)
+       🤖 Use AI to map business goals to code segments using embeddings or semantic search   
+       🤖 Use vector search + LLM agents to find relevant code, tables, and logic paths  
         ↓  
 🧩 [Related Code] + 💡 [Insight] + 📚 [Knowledge]  
         ↓  
-🧠 Reverse Engineering  (Analyze and understand legacy logic)
-   🤖 Generate contextual summaries for each component using AI
-   🤖 Use AI to simulate code execution, convert to pseudocode, or suggest modern equivalents
-   🤖 Extract requirements from legacy logic using AI and verify consistency with business goals  
+       🧠 Reverse Engineering  (Analyze and understand legacy logic)
+       🤖 Generate contextual summaries for each component using AI
+       🤖 Use AI to simulate code execution, convert to pseudocode, or suggest modern equivalents
+       🤖 Extract requirements from legacy logic using AI and verify consistency with business goals  
         ↓  
 📄 [Requirements]  (Define modern system requirements)
         ↓  
 👨‍💻 Developer  (Build implementation plan (tasks, risks, milestones)
+        ↓    
+       🛠️ Rebuild
+       🤖 AI assistant suggests task breakdowns, estimates effort, and highlights risk hotspots
+       🤖 Use AI pair programming and code transformation tools for assisted rewriting  
         ↓  
-   🤖 AI assistant suggests task breakdowns, estimates effort, and highlights risk hotspots  
-        ↓  
-🛠️ Rebuild  
-        ↓ 
-   🤖 Use AI pair programming and code transformation tools for assisted rewriting  
-        ↓  
-✅ Test + Validate
-        ↓   
-   🤖 Generate test cases, predict missing coverage, and validate edge cases  
+       ✅ Test + Validate   
+      🤖 Generate test cases, predict missing coverage, and validate edge cases  
         ↓  
 🚀 [Modern Code]
-        ↓
-   🤖 Continuously review code quality and suggest improvements post-migration  
 ```
 
 | Target Level               | Description                                                   | Example                             |
