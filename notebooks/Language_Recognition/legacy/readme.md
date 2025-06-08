@@ -1,5 +1,7 @@
 ## 🔍 Static Analysis Capabilities
 
+![img](img.png)
+
 Unlock key insights into your codebase with advanced static analysis techniques:
 
 ### ✅ 1. Syntax Analysis
