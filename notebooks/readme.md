@@ -41,6 +41,11 @@ Other well-known LLM models include GPT, Llama, DeepSeek, Qwen, Mistral, SmolLM2
 2. **You have limited labeled data...** but not enough for SFT (i.e generally less then 1000 labeled examples).
 3. **Chain-of-thought reasoning improves performance** Task performance improves significantly when you apply chain-of-thought reasoning.
 
+Tasks suited for RFT
+- Mathematical Problem Solving
+- Code Generation and Debugging
+- Logical and Multi-Step Reasoning
+
 ### LLM Tools and Frameworks
 
 1. [agent](./Agents-Course)
