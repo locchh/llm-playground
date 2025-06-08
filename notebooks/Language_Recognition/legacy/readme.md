@@ -58,29 +58,29 @@ Easily convert legacy or poorly documented code into comprehensible formats usin
 <p align="center"><strong>Reverse Engineering</strong></p>
 
 ```
-📦 Source Code + Data               - Existing legacy systems and artifacts
+📦 Source Code + Data                                  - Existing legacy systems and artifacts
       ↓
-      🔍 Discovery                  - Discovery the codebase to get insignts
+      🔍 Discovery                                     - Discovery the codebase to get insignts
       ↓
-💡 [Insight]                        - Observations about business logic, data use, structure  
+💡 [Insight]                                           - Observations about business logic, data use, structure  
       ↓
-      🧠 Understand                 - Understand codebase to identify potential features
+      🧠 Understand                                    - Understand codebase to identify potential features
       ↓
-🎯 [Target Feature]                 - Identify the business feature to modernize
+🎯 [Target Feature]  + 📚 [Knowledge]                  - Identify the business feature to modernize
       ↓
-      🔍 Search + Retrieve          - Locate related code and data assets
+      🔍 Search + Retrieve                              - Locate related code and data assets
       ↓
-🧩 [Related Code]                   - Legacy programs and data involved
+🧩 [Related Code] + 💡 [Insight] + 📚 [Knowledge]      - Legacy programs and data involved
       ↓
-      🧠 Reverse Engineering        - Analyze and understand legacy logic
+      🧠 Reverse Engineering                           - Analyze and understand legacy logic
       ↓
-📄 [Requirements]                   - Define modern system requirements
+📄 [Requirements]                                       - Define modern system requirements
       ↓
-👨‍💻 Developer                        - Build implementation plan
+👨‍💻 Developer                                            - Build implementation plan
       ↓
-      🛠️ Rebuild                    - Refactor, replatform, or rewrite
+      🛠️ Rebuild                                        - Refactor, replatform, or rewrite
       ↓
-🚀 [Modern Code]                    - Deliver modernized feature in new stack
+🚀 [Modern Code]                                        - Deliver modernized feature in new stack
 ```
 
 | Target Level               | Description                                                   | Example                             |
