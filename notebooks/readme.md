@@ -91,7 +91,7 @@ Tasks suited for RFT
 9. [distilabel](./distilabel)
 10. [TGI](./TGI)
 
-### Refs
+### References
 
 - [SmolLM](https://huggingface.co/collections/HuggingFaceTB/smollm-6695016cad7167254ce15966)
 - [SmolLM2](https://huggingface.co/collections/HuggingFaceTB/smollm2-6723884218bcda64b34d7db9)
