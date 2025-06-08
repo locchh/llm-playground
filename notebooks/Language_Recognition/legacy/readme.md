@@ -57,6 +57,18 @@ Easily convert legacy or poorly documented code into comprehensible formats usin
 </p>
 <p align="center"><strong>🎯 [Target] -> 🔍 Search + Retrieve -> 🧩 [Related Code] -> 👨‍💻 Developer -> 🛠️ Rebuild -> 🚀 [Modern Code]</strong></p>
 
+
+| Target Level               | Description                                                   | Example                             |
+| -------------------------- | ------------------------------------------------------------- | ----------------------------------- |
+| **Business Capability**    | A broad domain or function the business performs              | Claims Management                   |
+| **Feature / Use Case**     | A user-facing function or business outcome                    | Submit New Claim                    |
+| **User Story / Flow**      | A single user action or step within a feature                 | Fill out claim form, upload receipt |
+| **Component / Module**     | A group of related programs or screens supporting the feature | COBOL program `CLM001`, CICS screen |
+| **Function / Program**     | Individual programs or routines                               | `calculateDeductible()` in COBOL    |
+| **Code Block / Statement** | Specific logic chunks or conditions                           | `IF CLAIM_TYPE = "MED"` block       |
+| **Data Element / Record**  | Specific data fields, database tables, or VSAM records        | `POLICY_ID`, `CLAIM_AMOUNT`         |
+
+
 ### Key Deliverables:
 
 * **Flowcharts** to visualize logic and control paths.
