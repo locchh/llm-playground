@@ -58,22 +58,29 @@ Easily convert legacy or poorly documented code into comprehensible formats usin
 <p align="center"><strong>Reverse Engineering</strong></p>
 
 ```
-🎯 [Target Feature]         - Identify the business feature to modernize  
-      ↓  
-🔍 Search + Retrieve        - Locate related code and data assets  
-      ↓  
-🧩 [Related Code]           - Legacy programs and data involved  
-      ↓  
-🧠 Reverse Engineering      - Analyze and understand legacy logic  
-      ↓  
-📄 [Requirements]           - Define modern system requirements  
-      ↓  
-👨‍💻 Developer              - Build implementation plan  
-      ↓  
-🛠️ Rebuild                  - Refactor, replatform, or rewrite  
-      ↓  
-🚀 [Modern Code]            - Deliver modernized feature in new stack
-
+📦 Source Code + Data               - Existing legacy systems and artifacts
+      ↓
+      🔍 Discovery                  - Discovery the codebase to get insignts
+      ↓
+💡 [Insight]                        - Observations about business logic, data use, structure  
+      ↓
+      🧠 Understand                 - Understand codebase to identify potential features
+      ↓
+🎯 [Target Feature]                 - Identify the business feature to modernize
+      ↓
+      🔍 Search + Retrieve          - Locate related code and data assets
+      ↓
+🧩 [Related Code]                   - Legacy programs and data involved
+      ↓
+      🧠 Reverse Engineering        - Analyze and understand legacy logic
+      ↓
+📄 [Requirements]                   - Define modern system requirements
+      ↓
+👨‍💻 Developer                        - Build implementation plan
+      ↓
+      🛠️ Rebuild                    - Refactor, replatform, or rewrite
+      ↓
+🚀 [Modern Code]                    - Deliver modernized feature in new stack
 ```
 
 | Target Level               | Description                                                   | Example                             |
