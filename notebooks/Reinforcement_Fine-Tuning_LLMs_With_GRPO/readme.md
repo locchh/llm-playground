@@ -1,1 +1,1 @@
-https://learn.deeplearning.ai/courses/reinforcement-fine-tuning-llms-grpo/lesson/sjbja/introduction
+https://predibase.com/free-trial
