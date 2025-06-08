@@ -36,7 +36,12 @@ Other well-known LLM models include GPT, Llama, DeepSeek, Qwen, Mistral, SmolLM2
 6. **RAG** is ideal for dynamic knowledge injection but adds system complexity.  
 7. **MoE** is useful for scaling large models efficiently but requires complex inference pipelines.
 
-### TODO
+**Note**: Reinforcement Fine-tuning (RFT) can work will in situations where...
+1. **You have no labeled data...** but you can *verify* the correctness of the output (e.g transpiling source code).
+2. **You have limited labeled data...** but not enough for SFT (i.e generally less then 1000 labeled examples).
+3. **Chain-of-thought reasoning improves performance** Task performance improves significantly when you apply chain-of-thought reasoning.
+
+### LLM Tools and Frameworks
 
 1. [agent](./Agents-Course)
 2. [quantization](./Quantization)
