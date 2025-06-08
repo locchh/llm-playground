@@ -47,7 +47,7 @@ Tasks suited for RFT
 - Logical and Multi-Step Reasoning
 
 ```
-             When should you choose RFT over SFT?
+                   When should you choose RFT over SFT?
 
                      ┌───────────────────────────────┐
                      │ Do you have labeled (ground   │
@@ -64,27 +64,18 @@ Tasks suited for RFT
      └─────────┬─────────┘    │                         │
                │              │                         │
                │No            │Yes       ┌──────────────▼───────────────┐
-               │              │          │ < 100k examples (even <100)  │
-               │              │          └───────────────┬──────────────┘
-               │              │                          │Yes
-               │              │             ┌────────────▼─────────────┐
-               │              │             │ Does CoT / reasoning     │
-               │              │             │ help?                    │
-               |              │            └────────────┬─────────────┘
-               |              │                         │Yes
-               |              └─────────────────────────│
-            ┌──▼──┐                                  ┌──▼──┐
-            │RLHF │                                  │ RFT │
-            └─────┘                                  └─────┘
-
-                                       ┌────────────────────────────┐
-                                       │ > 100k examples OR         │
-                                       │ reasoning doesn't help     │
-                                       └────────────┬───────────────┘
-                                                    │
-                                                 ┌──▼──┐
-                                                 │ SFT │
-                                                 └─────┘
+               │              │          │ < 100k examples (even <100)  │───No───┐
+               │              │          └──────────────┬───────────────┘        │
+               │              │                         │Yes                     │
+               │              │            ┌────────────▼─────────────┐          │ 
+               │              │            │ Does CoT / reasoning     │─────No───┐
+               │              │            │ help?                    │          │
+               |              │            └────────────┬─────────────┘          │
+               |              │                         │Yes                     │
+               |              └─────────────────────────│                        │
+            ┌──▼──┐                                  ┌──▼──┐                  ┌──▼──┐
+            │RLHF │                                  │ RFT │                  │ SFT │
+            └─────┘                                  └─────┘                  └─────┘
 ```
 
 ### LLM Tools and Frameworks
