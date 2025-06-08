@@ -46,6 +46,47 @@ Tasks suited for RFT
 - Code Generation and Debugging
 - Logical and Multi-Step Reasoning
 
+```
+             When should you choose RFT over SFT?
+
+                     ┌───────────────────────────────┐
+                     │ Do you have labeled (ground   │
+                     │ truth) data?                  │
+                     └──────────────┬────────────────┘
+                                    │
+               ┌────────────────────┴──────────────────┐
+               │                                       │
+              No                                      Yes
+               │                                       │
+     ┌─────────▼─────────┐                 ┌───────────▼────────────┐
+     │ Is the task       │────┐            │        How much?       │
+     │ "verifiable"?     │    │            └────────────┬───────────┘
+     └─────────┬─────────┘    │                         │
+               │              │                         │
+               │No            │Yes       ┌──────────────▼───────────────┐
+               │              │          │ < 100k examples (even <100)  │
+               │              │          └───────────────┬──────────────┘
+               │              │                          │Yes
+               │              │             ┌────────────▼─────────────┐
+               │              │             │ Does CoT / reasoning     │
+               │              │             │ help?                    │
+               |              │            └────────────┬─────────────┘
+               |              │                         │Yes
+               |              └─────────────────────────│
+            ┌──▼──┐                                  ┌──▼──┐
+            │RLHF │                                  │ RFT │
+            └─────┘                                  └─────┘
+
+                                       ┌────────────────────────────┐
+                                       │ > 100k examples OR         │
+                                       │ reasoning doesn't help     │
+                                       └────────────┬───────────────┘
+                                                    │
+                                                 ┌──▼──┐
+                                                 │ SFT │
+                                                 └─────┘
+```
+
 ### LLM Tools and Frameworks
 
 1. [agent](./Agents-Course)
