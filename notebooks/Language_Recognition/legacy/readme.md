@@ -1,7 +1,7 @@
 ## 🔍 Static Analysis Capabilities
 
 <p align="center">
-  <img src="img.png" alt="Overview" width="400"/>
+  <img src="img.png" alt="Overview" width="800"/>
 </p>
 <p align="center"><strong>Overview</strong></p>
 
@@ -53,7 +53,7 @@ Unlock key insights into your codebase with advanced static analysis techniques:
 Easily convert legacy or poorly documented code into comprehensible formats using reverse engineering tools:
 
 <p align="center">
-  <img src="pic.png" alt="Reverse engineering" width="400"/>
+  <img src="pic.png" alt="Reverse engineering" width="800"/>
 </p>
 <p align="center"><strong>Reverse engineering</strong></p>
 
