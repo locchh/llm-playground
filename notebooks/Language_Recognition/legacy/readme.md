@@ -1,6 +1,6 @@
 ## 🔍 Static Analysis Capabilities
 
-<div style="text-align: center;">
+<div style="align: center;">
   <img src="img.png" alt="img" style="width: 50%;">
   <div><strong>Overview</strong></div>
 </div>
