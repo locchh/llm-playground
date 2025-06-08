@@ -55,7 +55,7 @@ Easily convert legacy or poorly documented code into comprehensible formats usin
 <p align="center">
   <img src="pic.png" alt="Reverse engineering" width="800"/>
 </p>
-<p align="center"><strong>Reverse engineering</strong></p>
+<p align="center"><strong>🎯 [Target] -> 🔍 Search + Retrieve -> 🧩 [Related Code] -> 👨‍💻 Developer -> 🛠️ Rebuild -> 🚀 [Modern Code]</strong></p>
 
 ### Key Deliverables:
 
