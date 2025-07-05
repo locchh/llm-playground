@@ -1,6 +1,6 @@
 # llm-playground 🤖
 
-A sandbox environment to experiment with large language models and various NLP tasks. 💻📚
+A collection of experiments with large language models across various NLP tasks. 💻📚
 
 **Notes** 📝
 
