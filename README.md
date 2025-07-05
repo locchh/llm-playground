@@ -21,4 +21,4 @@ A collection of experiments with large language models across various NLP tasks.
 
 - **POC Repositories**: Create and share repositories showcasing new technologies and quick demonstrations for easy exploration (e.g.,[lr4lg](https://github.com/locchh/lr4lg), [debugger](https://github.com/locchh/debugger), etc.). 📂
 
-- **Build Continuously Growing Repositories**: Develop and maintain long-term, evolving repositories for ongoing projects (e.g., [Synthflow](https://github.com/locchh/synthflow), [Antflow](https://github.com/locchh/antflow), [Antelligence](https://github.com/locchh/antelligence), etc.). 🔄
+- **Build Continuously Growing Repositories**: Develop and maintain long-term, evolving repositories for ongoing projects (e.g., [Synthflow](https://github.com/locchh/synthflow), [AgenticFlow](https://github.com/locchh/agenticflow), [jsonparser](https://github.com/locchh/jsonparser), etc.). 🔄
