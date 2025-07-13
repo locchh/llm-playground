@@ -90,6 +90,7 @@ Tasks suited for RFT
 8. [lighteval](./lighteval)
 9. [distilabel](./distilabel)
 10. [TGI](./TGI)
+11. [autogen](https://microsoft.github.io/autogen/0.2/docs/Getting-Started/)
 
 ### References
 
