@@ -5,3 +5,8 @@
 | **Supervised Fine-tuning (SFT)**   | Imitate the example responses by maximizing the probability of the response | Simple implementation, great for jump-starting new model behavior      | May degrade other performances for tasks not included in training data |
 | **Online Reinforcement Learning (e.g. PPO, GRPO)** | Maximize the reward for the response                                  | Better at improving model capabilities without degrading performance in unseen tasks | Most complex implementation; requires good design of reward functions |
 | **Direct Preference Optimization (DPO)** | Encourage good answer while discouraging bad answer provided        | Train model in a contrastive fashion; good at fixing wrong behaviors and improving targeted capabilities | May be prone to overfitting; implementation complexity in between SFT & Online RL |
+
+### Why Online RL degrated performance less compared with SFT?
+
+- Online RL tweaks behaviors within the model's native manifold
+- SFT drags it into an alien one, risking unnecessary changes of model weights
