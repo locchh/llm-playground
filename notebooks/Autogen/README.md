@@ -10,4 +10,4 @@
 
 [autogen-api-reference](https://microsoft.github.io/autogen/stable/reference/index.html)
 
-[autogen-github](https://github.com/microsoft/autogen)
+[autogen-repo](https://github.com/microsoft/autogen)
