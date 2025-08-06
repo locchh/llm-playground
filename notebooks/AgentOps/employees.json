@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Alice Johnson",
+    "department": "Engineering",
+    "salary": 75000
+  },
+  {
+    "name": "Bob Smith",
+    "department": "Marketing",
+    "salary": 60000
+  },
+  {
+    "name": "Charlie Brown",
+    "department": "Sales",
+    "salary": 55000
+  },
+  {
+    "name": "Diana Prince",
+    "department": "HR",
+    "salary": 70000
+  },
+  {
+    "name": "Ethan Hunt",
+    "department": "Finance",
+    "salary": 80000
+  }
+]
