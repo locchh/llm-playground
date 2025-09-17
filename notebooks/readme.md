@@ -91,7 +91,7 @@ Tasks suited for RFT
 - [ollama](https://ollama.com/)
 - [autogen](https://microsoft.github.io/autogen/0.2/docs/Getting-Started/)
 
-- [weaviate-docs(https://docs.weaviate.io/weaviate)
+- [weaviate-docs](https://docs.weaviate.io/weaviate)
 
 - [weaviate-learns](https://weaviate.io/learn)
 
