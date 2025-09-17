@@ -80,17 +80,28 @@ Tasks suited for RFT
 
 ### LLM Tools and Frameworks
 
-1. [agent](./Agents-Course)
-2. [quantization](./Quantization)
-3. [langgraph](./langgraph)
-4. [llamaindex](./llamaindex)
-5. [llamacpp](./llamacpp)
-6. [ollama](./ollama)
-7. [vllm](./vllm)
-8. [lighteval](./lighteval)
-9. [distilabel](./distilabel)
-10. [TGI](./TGI)
-11. [autogen](https://microsoft.github.io/autogen/0.2/docs/Getting-Started/)
+- quantization
+- langgraph
+- llamaindex
+- llamacpp
+- TGI
+- vllm
+- lighteval
+- distilabel
+- [ollama](https://ollama.com/)
+- [autogen](https://microsoft.github.io/autogen/0.2/docs/Getting-Started/)
+
+- [weaviate-docs(https://docs.weaviate.io/weaviate)
+
+- [weaviate-learns](https://weaviate.io/learn)
+
+- [weaviate-tutorials](https://docs.weaviate.io/weaviate/tutorials)
+
+- [graphacademy](https://graphacademy.neo4j.com/categories/beginners/)
+
+- [neo4j-getting-started](https://neo4j.com/docs/getting-started/)
+
+- [neo4j-sandbox](https://sandbox.neo4j.com/)
 
 ### References
 
